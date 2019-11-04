@@ -1,0 +1,108 @@
+(ROOT
+      :DCT -
+      :snt1(
+            :coref()
+            :temporal(
+                  :after(DCT, putting)
+                  :before putting, met)
+            )
+            :modality(
+                  :positive(AUTHOR, putting)
+                  :positive(AUTHOR, met)
+            )
+      )
+      :snt2(
+            :coref(
+                  :same(his, Clinton)
+            )
+            :temporal(
+                  :before(DCT, visit)
+                  :overlap(DCT, is)
+                  :after(is, ends)
+            )
+            :modality(
+                  :positive(AUTHOR, is)
+                  :neutral(AUTHOR, lay)
+                  :neutral(AUTHOR, trip)
+                  :positive(AUTHOR, ends)
+            )
+      )
+      :snt3(
+            :coref()
+            :temporal(
+                  :before(DCT, visit)
+                  :after(visit, was_established)
+            )
+            :modality(
+                  :positive(AUTHOR, visit)
+                  :positive(AUTHOR, is)
+                  :positive(AUTHOR, was_established)
+            )
+      )
+      :snt4(
+            :coref()
+            :temporal(
+                  :overlap(DCT, is)
+                  :after(DCT, has_written)
+            )
+            :modality(
+                  :positive(AUTHOR, is)
+                  :positive(AUTHOR, has_written)
+            )
+      )
+      :snt5(
+            :coref(
+                  :same(She, Kong Dan Oh)
+            )
+            :temporal(
+                  :overlap(DCT, is)
+            )
+            :modality(
+                  :positive(AUTHOR, is)
+            )
+      )
+      :snt6(
+            :coref(
+                  :same(we, AUTHOR) # maybe not
+            )
+            :temporal(
+                  :overlap(DCT, know) # perhaps `before` for all present verbs used during the interview?
+                  :after(know, visit)
+                  :before(visit, is_making)
+            )
+            :modality(
+                  :positive(AUTHOR, know)
+                  :positive(AUTHOR, is_making)
+            )
+      )
+      :snt7(
+            :coref(
+                  :same(you, Kong Dan Oh)
+            )
+            :temporal(
+                  :overlap(DCT, tell)
+                  :overlap(tell, is_being_reported)
+                  :after(is_being_reported, meeting)
+            )
+            :modality(
+                  :positive(AUTHOR, tell)
+                  :positive(AUTHOR, is_being_reported)
+                  :positive(AUTHOR, meeting)
+            )
+      )
+      :snt8(
+            :coref(
+                  :same(I, Kong Dan Oh)
+            )
+            :temporal(
+                  :overlap(DCT, look)
+                  :???(look, was) # no idea
+                  :after(DCT, meeting)
+            )
+            :modality(
+                  :positive(Kong Dan Oh, look)
+                  :positive(Kong Dan Oh, was)
+                  :positive(Kong Dan Oh, meeting)
+            )
+      )
+)

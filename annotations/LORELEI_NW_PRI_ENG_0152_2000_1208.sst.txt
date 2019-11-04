@@ -1,0 +1,316 @@
+# ::id NW_PRI_ENG_0152_2000_1208.1 ::date 2017-11-06T06:01:57 ::annotator SDL-AMR-09 ::preferred
+# ::snt The United States is hoping that Russia's President Vladimir Putin will follow the advice of his special commission and pardon Edmund Pope.
+# ::save-date Mon Nov 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_1.txt
+(h2 / hope-01
+      :ARG0 (c / country :wiki "United_States"
+            :name (n / name :op1 "United" :op2 "States"))
+      :ARG1 (a2 / and
+            :op1 (f / follow-02
+                  :ARG0 (p / person :wiki "Vladimir_Putin"
+                        :name (n3 / name :op1 "Vladimir" :op2 "Putin")
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (c2 / country :wiki "Russia"
+                                    :name (n2 / name :op1 "Russia"))
+                              :ARG2 (p2 / president)))
+                  :ARG1 (a / advise-01
+                        :ARG0 (c3 / commission
+                              :ARG1-of (s / special-02)
+                              :poss p)
+                        :ARG1 p))
+            :op2 (p3 / pardon-01
+                  :ARG0 p
+                  :ARG1 (p4 / person :wiki "Edmond_Pope"
+                        :name (n4 / name :op1 "Edmund" :op2 "Pope")))))
+
+# ::id NW_PRI_ENG_0152_2000_1208.2 ::date 2017-11-06T06:07:05 ::annotator SDL-AMR-09 ::preferred
+# ::snt This week the American businessman began serving a 20-year prison sentence in Moscow after being convicted of spying.
+# ::save-date Mon Nov 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_2.txt
+(b / begin-01
+      :ARG0 (b2 / businessman
+            :mod (c / country :wiki "United_States"
+                  :name (n / name :op1 "America")))
+      :ARG1 (s / serve-04
+            :ARG0 b2
+            :ARG1 (s2 / sentence-01
+                  :ARG1 b2
+                  :ARG2 (p / prison
+                        :duration (t / temporal-quantity :quant 20
+                              :unit (y / year))))
+            :location (c3 / city :wiki "Moscow"
+                  :name (n3 / name :op1 "Moscow")))
+      :time (w / week
+            :mod (t2 / this))
+      :time (a / after
+            :op1 (c4 / convict-01
+                  :ARG1 b2
+                  :ARG2 (s3 / spy-01
+                        :ARG0 b2))))
+
+# ::id NW_PRI_ENG_0152_2000_1208.3 ::date 2017-11-06T06:20:20 ::annotator SDL-AMR-09 ::preferred
+# ::snt Specifically Russian prosecutors charged that Pope had stolen secrets relating to a high-speed Russian torpedo.
+# ::save-date Wed Dec 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_3.txt
+(c2 / charge-05
+      :ARG0 (p3 / person
+            :ARG0-of (p4 / prosecute-01)
+            :mod (c / country :wiki "Russia"
+                  :name (n2 / name :op1 "Russia")))
+      :ARG1 p
+      :ARG2 (s / steal-01
+            :ARG0 (p / person :wiki "Edmond_Pope"
+                  :name (n / name :op1 "Pope"))
+            :ARG1 (s2 / secret
+                  :ARG1-of (r / relate-01
+                        :ARG2 (t / torpedo
+                              :mod c
+                              :ARG1-of (s3 / speed-01
+                                    :ARG1-of (h / high-02))))))
+      :manner (s4 / specific-02))
+
+# ::id NW_PRI_ENG_0152_2000_1208.4 ::date 2017-11-06T06:27:43 ::annotator SDL-AMR-09 ::preferred
+# ::snt Pope denied the charges and Washington backed him up.
+# ::save-date Mon Dec 18, 2017 ::file NW_PRI_ENG_0152_2000_1208_4.txt
+(a / and
+      :op1 (d / deny-01
+            :ARG0 (p2 / person :wiki "Edmond_Pope" :name (n4 / name :op1 "Pope"))
+            :ARG1 (c2 / charge-05
+                  :ARG1 p2))
+      :op2 (b / back-up-04
+            :ARG0 (g / government-organization
+                  :location (c / city :wiki "Washington,_D.C." :name (n / name :op1 "Washington")))
+            :ARG1 p2))
+
+### changes topic, enters interview mode here
+
+# ::id NW_PRI_ENG_0152_2000_1208.5 ::date 2017-11-06T06:30:22 ::annotator SDL-AMR-09 ::preferred
+# ::snt Marsha Lipman is Editor of Moscow based news magazine 'Itogi'.
+# ::save-date Mon Nov 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_5.txt
+(p / person :wiki -
+      :name (n2 / name :op1 "Marsha" :op2 "Lipman")
+      :ARG0-of (h / have-org-role-91
+            :ARG1 (m / magazine :wiki -
+                  :name (n4 / name :op1 "Itogi")
+                  :mod (n3 / news)
+                  :ARG1-of (b / base-01
+                        :location (c / city :wiki "Moscow"
+                              :name (n / name :op1 "Moscow"))))
+            :ARG2 (e / editor)))
+
+# ::id NW_PRI_ENG_0152_2000_1208.6 ::date 2017-11-06T06:33:41 ::annotator SDL-AMR-09 ::preferred
+# ::snt Marsha, did the Presidential Pardons Commission give any reason for their decision?
+# ::save-date Wed Dec 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_6.txt
+(a2 / ask-01
+      :ARG0 (i / i)
+      :ARG1 (g / give-01
+            :ARG0 g2
+            :ARG1 (r / reason-01
+                  :ARG0 (g2 / government-organization :wiki -
+                        :name (n2 / name :op1 "Presidential" :op2 "Pardons" :op3 "Commission"))
+                  :ARG1 (d / decide-01
+                        :ARG0 g2)
+                  :mod (a3 / any))
+            :polarity (a / amr-unknown))
+      :ARG2 (p3 / person :wiki -
+            :name (n / name :op1 "Marsha")))
+
+# ::id NW_PRI_ENG_0152_2000_1208.7 ::date 2017-11-06T09:34:39 ::annotator SDL-AMR-09 ::preferred
+# ::snt It gave several reasons.
+# ::save-date Mon Nov 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_7.txt
+(g / give-01
+      :ARG0 (i2 / it)
+      :ARG1 (r / reason
+            :quant (s / several)))
+
+# ::id NW_PRI_ENG_0152_2000_1208.8 ::date 2017-11-06T09:35:29 ::annotator SDL-AMR-09 ::preferred
+# ::snt I am not sure if those were the formal reasons but members of the commission have been interviewed today by various outlets and they say that they were afraid of the spy mania rising in Russia, that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term, whereas the article of the law had 10 to 20 years.
+# ::save-date Wed Dec 6, 2017 ::file NW_PRI_ENG_0152_2000_1208_8.txt
+(c2 / contrast-01
+      :ARG1 (s / sure-02 :polarity -
+            :ARG0 (i / i)
+            :ARG1 (t3 / truth-value
+                  :polarity-of (r / reason
+                        :mod (f / formal)
+                        :mod (t / that))))
+      :ARG2 (a / and
+            :op1 (i2 / interview-01
+                  :ARG0 (o / outlet
+                        :mod (v / various))
+                  :ARG1 (p / person
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (c / commission)
+                              :ARG2 (m / member)))
+                  :time (t4 / today))
+            :op2 (s2 / say-01
+                  :ARG0 p
+                  :ARG1 (a2 / and
+                        :op1 (f3 / fear-01
+                              :ARG0 p
+                              :ARG1 (r2 / rise-01
+                                    :ARG1 (m2 / mania
+                                          :topic (s3 / spy-01))
+                                    :location (c4 / country :wiki "Russia"
+                                          :name (n2 / name :op1 "Russia"))))
+                        :op2 (t5 / think-01
+                              :ARG0 p
+                              :ARG1 (s4 / suspicious-02
+                                    :ARG0 p
+                                    :ARG1 (s5 / sentence-01
+                                          :ARG1 (p2 / person :wiki "Edmond_Pope"
+                                                :name (n3 / name :op1 "Edmund" :op2 "Pope"))
+                                          :ARG2 (t6 / term
+                                                :mod (m3 / maximum))
+                                          :condition (h2 / have-04
+                                                :ARG0 (a3 / article
+                                                      :source (l / law))
+                                                :ARG1 (b / between
+                                                      :op1 (t7 / temporal-quantity :quant 10
+                                                            :unit (y3 / year))
+                                                      :op2 (t8 / temporal-quantity :quant 20
+                                                            :unit (y4 / year)))))
+                                    :degree (r3 / really)))))))
+
+## SUPER STRUCTURE
+Oct 28
+Notes
+      * 1-based indexing
+      * :coref -> focus on INTER-sentence coref chains, since AMRs already take care of INTRA-sentence corefs
+      * :temporal ->
+      * :modal ->
+            1. How to do modality in a question?
+
+Pos: full positive; complete certainty that the event occurs (CT+)
+PosPrt: partial positive; there is strong, but not definitive certainty that the event occurs (CR+)
+
+Neut: positive neutral; there is neutral certainty that the event occurs/doesn't occur; event is expressed positively (PS+)
+NeutNeg: negative neutral; there is neutral certainty that the event occurs/doesn't occur; negation of event is expressed (PS-)
+
+NegPrt: partial negative; there is strong but not definitive certainty that the event does not occur (PR-)
+Neg: full negative; complete certainty that the event does not occur (CT-)
+
+SameSP: both events are in the same modal space
+
+(ROOT
+      :DCT dct
+      :AUTHOR aut
+      :snt1(
+The United States is hoping that Russia's President Vladimir Putin will follow the advice of his special commission and pardon Edmund Pope.
+            :coref()
+            :temporal(
+                  :overlap(dct, s1h2/hope-01)
+                  :before(s1h2/hope-01, s1f/follow-02) # don't know if occurred
+                  :before(s1h2/hope-01, s1p3/pardon-01)
+            )
+            :modal(
+                  :pos(aut, s1h2/hope-01)
+                  :pos(aut, s1f/follow-02) # predictive future (e.g. `will`) categorized as Positive
+                  :pos(aut, s1p3/pardon-01)
+            )
+      )
+      :snt2(
+      This week the American businessman began serving a 20-year prison sentence in Moscow after being convicted of spying.
+            :coref(
+                  :same(s2b2/businessman, s1p4/person(Edmond Pope)) # keep?
+            )
+            :temporal(
+                  :after(dct, s2b/begin-01)
+                  :???(begin, serve?) # aspectual_link(begin, serve) [timeBank?]
+                  :after(s2b/begin-01, s2c4/convict-01)
+            )
+            :modal(
+                  :pos(aut, s2b/begin-01)
+                  :pos(aut, s2c4/convict-01)
+            )
+      )
+      :snt3(
+      Specifically Russian prosecutors charged(didn't charge) that Pope had stolen secrets relating to a high-speed Russian torpedo.
+            :coref(
+                  :same(s3p/person(Edmond Pope), s2b2/businessman) # whether to link to first mention, or the immediately preceding mention? Doesn't matter, as long as consistent in guidelines
+            )
+            :temporal(
+                  :before(s3c2/charge-05, s2b/begin-01) # `charged` before `began serving time`
+                  :after(s3c2/charge-05, s3s/steal-01) # `charged` after `had_stolen`
+            )
+            :modal(
+                  :pos(aut, s3c2/charge-05)
+
+                  A
+                    :pos(aut, s3p3/person(Russian prsecutors); s3s/steal-01)
+                  B
+                    :pos(aut, s3p3/person(Russian prsecutors)) # between two sources?
+                    :pos(s3p3/person(Russian prsecutors), s3s/steal-01) # `stealing` definitely happened from the POV of Russian procecutors
+            )
+      )
+      :snt4(
+      Pope denied the charges and Washington backed him up.
+            :coref(
+                  :same(s4p2/person(Edmond Pope), s3p/person(Edmond Pope))
+            )
+            :temporal(
+                  :after(s4d/deny-01, s3c2/charge-01) # `denied` after `charged
+                  :before(s4d/deny-01, s4b/back-up-04) # `denied` before washington `backed` him up
+            )
+            :modal(
+                  :pos(aut, s4c2/charge-01) # `charges` denied by `Pope`
+                  :pos(aut, s4d/deny-01) # `denying` definitely happened from author's POV
+                  :pos(aut, s4b/back-up-04)
+            )
+      )
+
+      ### changes topic, enters interview mode here
+
+      :snt5(
+      Marsha Lipman is Editor of Moscow based news magazine 'Itogi'.
+            :coref()
+            :temporal()
+            :modal()
+      )
+      :snt6(
+      Marsha, did the Presidential Pardons Commission give any reason for their decision?
+            :coref(
+                  :same(s6i/i, aut)
+                  :same(s6p3/person(Marsha), s5p/person(Marsha Lipman))
+            )
+            :temporal(
+                  :before(dct, s6g/give-01)
+                  :after(s6g/give-01, s6d/decide-01) # `give` reason after `decision`
+            )
+            :modal(
+                  :neut(aut, s6g/give-01) # how to do modality in a question?
+                  :pos(aut, s6d/decide-01) # `decision` definitely happened
+            )
+      )
+      :snt7(
+      It gave several reasons.
+            :coref(
+                  # good working example of coref with pronoun referring to an entity in a previous sentence
+                  :same(s7i2/it, s6g2/government-organization(Presidential Pardons Commission))
+            )
+            :temporal(
+                  :overlap(s7g/give-01, s6g/give-01) # same `give`, an extension of last Thursday's meeting: how to represent same event relationship?
+            )
+            :modal(
+                  :pos(s6/i, s7g/give-01) # Marsha Lipman
+            )
+      )
+      :snt8(
+      I am not sure if those were the formal reasons but members of the commission have been interviewed today by various outlets and they say that they were afraid of the spy mania rising in Russia, that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term, whereas the article of the law had 10 to 20 years.
+            :coref(
+                  :same(s8i/i, s6p3/person(Marsha)) # I == Marsha Lipman
+                  :same(s8t/that, s7r/reason) # those == reasons
+                  :same(s8p2/person(Edmond Pope), s4p2(person(Edmond Pope))) # Edmund Pope
+            )
+            :temporal(
+
+            )
+            :modal(
+                  :pos(s8i/i, s8i2/interview-01) # `interviewed` definitely happened from `Marsha Lipman`'s  POV
+                  :pos(s8i/i, s8s2/say-01) # they say
+                  :pos(s8i/i, s8p/person(member of commission)) # between modal sources
+                  :pos(s8p/person(member of commission), s8f3/fear-01(were_afraid)) # s8p: `members of commission`, referred to as `they`;
+                  :neut(s8p/person(member of commission), s8r2/rise-01) # because of `fear` construction
+                  :pos(s8p/person(member of commission), s8t5/think-01)
+                  :pos(s8p/person(member of commission), s8s4/suspicious-02) # ??? `that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term`
+                  :pos(s8p/person(member of commission), s8s5/sentence-01) # ???
+                  :pos(s8p/person(member of commission), s8h2/have-04)
+            )
+      )
+)
