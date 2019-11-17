@@ -1,126 +1,122 @@
 (ROOT
-      :DCT dct
-      :AUTHOR aut
-      :SNT (snt1
-# The United States is hoping that Russia's President Vladimir Putin will follow the advice of his special commission and pardon Edmund Pope.
-            :coref()
-            :temporal(
-                  overlap(dct, s1h2/hope-01),
-                  before(s1h2/hope-01, s1f/follow-02), # don't know if occurred
-                  before(s1h2/hope-01, s1p3/pardon-01)
-            )
-            :modal(
-                  pos(aut, s1h2/hope-01),
-                  pos(aut, s1f/follow-02), # predictive future (e.g. `will`) categorized as Positive
-                  pos(aut, s1p3/pardon-01)
-            )
-      )
-      :SNT (snt2
-      # This week the American businessman began serving a 20-year prison sentence in Moscow after being convicted of spying.
-            :coref(
-                  same(s2b2/businessman, s1p4/person(Edmond Pope)) # keep?
-            )
-            :temporal(
-                  after(dct, s2b/begin-01),
-                  ???(begin, serve?), # aspectual_link(begin, serve) [timeBank?]
-                  after(s2b/begin-01, s2c4/convict-01)
-            )
-            :modal(
-                  pos(aut, s2b/begin-01),
-                  pos(aut, s2c4/convict-01)
-            )
-      )
-      :SNT (snt3
-      # Specifically Russian prosecutors charged(didn't charge) that Pope had stolen secrets relating to a high-speed Russian torpedo.
-            :coref(
-                  same(s3p/person(Edmond Pope), s2b2/businessman) # whether to link to first mention, or the immediately preceding mention? Doesn't matter, as long as consistent in guidelines
-            )
-            :temporal(
-                  before(s3c2/charge-05, s2b/begin-01), # `charged` before `began serving time`
-                  after(s3c2/charge-05, s3s/steal-01) # `charged` after `had_stolen`
-            )
-            :modal(
-                  pos(aut, s3c2/charge-05)
-
-                  # A
-                  #   pos(aut, s3p3/person(Russian prsecutors); s3s/steal-01)
-                  # B
-                  pos(aut, s3p3/person(Russian prsecutors)), # between two sources?
-                  pos(s3p3/person(Russian prsecutors), s3s/steal-01) # `stealing` definitely happened from the POV of Russian procecutors
-            )
-      )
-      :SNT (snt4
-      # Pope denied the charges and Washington backed him up.
-            :coref(
-                  same(s4p2/person(Edmond Pope), s3p/person(Edmond Pope))
-            )
-            :temporal(
-                  after(s4d/deny-01, s3c2/charge-01), # `denied` after `charged
-                  before(s4d/deny-01, s4b/back-up-04) # `denied` before washington `backed` him up
-            )
-            :modal(
-                  pos(aut, s4c2/charge-01), # `charges` denied by `Pope`
-                  pos(aut, s4d/deny-01), # `denying` definitely happened from author's POV
-                  pos(aut, s4b/back-up-04)
-            )
-      )
-
-      ### changes topic, enters interview mode here
-
-      :SNT (snt5
-      # Marsha Lipman is Editor of Moscow based news magazine 'Itogi'.
-            :coref()
-            :temporal()
-            :modal()
-      )
-      :SNT (snt6
-      # Marsha, did the Presidential Pardons Commission give any reason for their decision?
-            :coref(
-                  same(s6i/i, aut),
-                  same(s6p3/person(Marsha), s5p/person(Marsha Lipman))
-            )
-            :temporal(
-                  before(dct, s6g/give-01),
-                  after(s6g/give-01, s6d/decide-01) # `give` reason after `decision`
-            )
-            :modal(
-                  neut(aut, s6g/give-01), # how to do modality in a question?
-                  pos(aut, s6d/decide-01) # `decision` definitely happened
-            )
-      )
-      :SNT (snt7
-      # It gave several reasons.
-            :coref(
-                  # good working example of coref with pronoun referring to an entity in a previous sentence
-                  same(s7i2/it, s6g2/government-organization(Presidential Pardons Commission))
-            )
-            :temporal(
-                  overlap(s7g/give-01, s6g/give-01) # same `give`, an extension of last Thursday's meeting: how to represent same event relationship?
-            )
-            :modal(
-                  pos(s6i/i, s7g/give-01) # Marsha Lipman
-            )
-      )
-      :SNT (snt8
-      # I am not sure if those were the formal reasons but members of the commission have been interviewed today by various outlets and they say that they were afraid of the spy mania rising in Russia, that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term, whereas the article of the law had 10 to 20 years.
-            :coref(
-                  same(s8i/i, s6p3/person(Marsha)), # I == Marsha Lipman
-                  same(s8t/that, s7r/reason), # those == reasons
-                  same(s8p2/person(Edmond Pope), s4p2/(person(Edmond Pope))) # Edmund Pope
-            )
-            :temporal(
-
-            )
-            :modal(
-                  pos(s8i/i, s8i2/interview-01), # `interviewed` definitely happened from `Marsha Lipman`'s  POV
-                  pos(s8i/i, s8s2/say-01), # they say
-                  pos(s8i/i, s8p/person(member of commission)), # between modal sources
-                  pos(s8p/person(member of commission), s8f3/fear-01(were_afraid)), # s8p: `members of commission`, referred to as `they`;
-                  neut(s8p/person(member of commission), s8r2/rise-01), # because of `fear` construction
-                  pos(s8p/person(member of commission), s8t5/think-01),
-                  pos(s8p/person(member of commission), s8s4/suspicious-02), # ??? `that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term`
-                  pos(s8p/person(member of commission), s8s5/sentence-01), # ???
-                  pos(s8p/person(member of commission), s8h2/have-04)
-            )
-      )
+    :DCT dct
+    :AUTHOR aut
+    :SNT(snt1
+        :coref()
+        :temporal(
+            overlap(s1h2/hope-01, dct)
+            after(s1f/follow-01, s1h2/hope-01)
+            after(s1p3/pardon-01, s1h2/hope-01)
+        )
+        :modality(
+            pos(s1h2/hope-01, aut)
+            pos(s1f/follow-02, aut)
+            pos(s1p3/pardon-01, aut)
+        )
+    )
+    :SNT(snt2
+        :coref(
+            same(s2b2/businessman, s1p4/Edmond_Pope)
+        )
+        :temporal(
+            before(s2b/begin-01, dct)
+            ???(s2s/serve-04, s2b/begin-01) # TODO (Nov 17): aspectual_link
+            # before(s2c4/convict-01, s2b/begin-01) # TODO (Nov 17): whether to retain this, if captured in amr already ?
+        )
+        :modality(
+            pos(s2b/begin-01, aut) # TODO (Nov 17): confirm
+            pos(s2s/serve-04, aut) # TODO (Nov 17): confirm
+            pos(s2c4/convict-01, aut)
+        )
+    )
+    :SNT(snt3
+        :coref(
+            same(s3p/Edmond_Pope, s2b2/businessman)
+        )
+        :temporal(
+            before(s3c2/charge-05, s2b/begin-01) # `charged` before `began serving time`
+            before(s3s/steal-01, s3c2/charge-05) # `charged` after `had_stolen`
+        )
+        :modality(
+            pos(aut, s3c2/charge-05)
+            pos(aut, s3p3/Russian_prsecutors)
+            pos(s3p3/Russian_prsecutors, s3s/steal-01)
+        )
+    )
+    :SNT(snt4
+        :coref(
+            same(s4p2/Edmond_Pope, s3p/Edmond_Pope)
+        )
+        :temporal(
+            after(s4d/deny-01, s3c2/charge-01)
+            after(s4b/back-up-04, s4d/deny-01)
+        )
+        :modality(
+            pos(aut, s4c2/charge-01)
+            pos(aut, s4d/deny-01)
+            pos(aut, s4b/back-up-04)
+        )
+    )
+    :SNT(snt5
+        :coref()
+        :temporal()
+        :modality()
+    )
+    :SNT(snt6
+        :coref(
+            same(s6i/i, aut) # TODO (Nov 17): implicit I, only appearing in amr. How to annotate this?
+            same(s6p3/Marsha, s5p/Marsha_Lipman)
+        )
+        :temporal(
+            before(s6g/give-01, dct)
+            after(s6g/give-01, s6d/decide-01) # `give` reason after `decision`
+        )
+        :modality(
+            neut(s6g/give-01, aut) # how to do modality in a question?
+            pos(s6d/decide-01, aut) # `decision` definitely happened
+        )
+    )
+    :SNT(snt7
+        :coref(
+            same(s7i2/it, s6g2/Presidential_Pardons_Commission)
+        )
+        :temporal(
+            overlap(s7g/give-01, s6g/give-01) # same `give`, an extension of last Thursday's meeting: how to represent same event relationship?
+        )
+        :modality(
+            pos(s7g/give-01, s6/i) # Marsha Lipman
+        )
+    )
+    :SNT(snt8
+        :coref(
+            same(s8i/i, s6p3/Marsha)
+            # TODO (Nov 17): what about `the commision`?
+            # all occurrences of `they` are handled within AMRs, since they refer to `members of the commision`
+            same(s8t/that, s7r/reason) # those == reasons ???
+            same(s8p2/Edmond_Pope, s4p2/Edmond Pope)
+        )
+        :temporal(
+            # TODO (Nov 17): all of it here
+            before(s8i2/interview-01, dct)
+            overlap(s8s2/say-01, s8i2/interview-01) # interview as an interval event
+            before(s8f3/fear-01, s8s2/say-01)
+            before(s8t5/think-01, s8s2/say-01)
+            overlap(s8s4/suspicious-02, s8t5/think-01) # not sure here
+            before(s8s5/sentence-01, s8s4/suspicious-02)
+            ???(s8h2/have-04, ???)
+        )
+        :modality(
+            # TODO (Nov 17): all of it here
+            # triple for s8r/reason ???
+            pos(s8i2/interview-01, s8i/i) # `interviewed` definitely happened from `Marsha Lipman`'s  POV
+            pos(s8s2/say-01, s8i/i) # they say
+            pos(s8p/memebers_of_the_commision, s8i/i) # between modal sources
+            pos(s8f3/fear-01, s8p/memebers_of_the_commision) # s8p: `members of commission`, referred to as `they`;
+            neut(s8r2/rise-01, s8p/memebers_of_the_commision) # because of `fear` construction
+            pos(s8t5/think-01, s8p/memebers_of_the_commision)
+            pos(s8s4/suspicious-02, s8p/memebers_of_the_commision) # ??? `that they thought it was really suspicious to them that Edmund Pope was sentenced to the maximum term`
+            pos(s8s5/sentence-01, s8p/memebers_of_the_commision) # ???
+            pos(s8h2/have-04, s8p/memebers_of_the_commision)
+        )
+    )
 )

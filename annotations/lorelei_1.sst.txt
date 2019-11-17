@@ -148,7 +148,9 @@
                         :degree (v2 / very)))))
 
 ## SUPER STRUCTURE
-## these amrs are from a dialogue, which is an interesting annotating exercise and brings up new questions.
+Oct 20
+* Updated Nov 16
+these amrs are from a dialogue, which is an interesting annotating exercise and brings up new questions.
 
 (ROOT
     :DCT dct
@@ -184,7 +186,7 @@
     Albright's visit to Pyongyang is the first by a high level US official since the communist state was established in 1948.
         :coref(
             same(s3p/Madeleine_Albright, s1p2/Madeleine_Albright)
-            # what about Pyongyang in snt1 and snt3?
+            # TODO (Nov 17): what about Pyongyang in snt1 and snt3?
         )
         :temporal(
             before(s3v/visit-01, dct)
@@ -220,6 +222,7 @@
     :SNT(snt6
     We know that the visit is making big news there in Seoul.
         :coref(
+            # TODO (Nov 17): how to handle `we` or `they` in corefernce
             # # assuming `we` refer to the agents of the interview, i.e. author and Kong Dan Oh, but this complicates our chain structure
             # same(s6w/we, aut)
             # same(s6w/we, s5s/she)
@@ -227,7 +230,7 @@
         :temporal(
             # tricky case, since we have no reporting verb but this is still a quotation
             overlap(s6k/know-01, dct)
-            before(s6v/visit-01, s6k/know-01) # perhaps overlap, if visit is still happening?
+            before(s6v/visit-01, s6k/know-01) # TODO (Nov 17): perhaps overlap, if visit is still happening?
             overlap(s6m/make-18, s6v/visit-01)
         )
         :modality(
@@ -250,10 +253,10 @@
             overlap(s7m/meet-03, s7r/report-01)
         )
         :modality(
-            ???(s7t/tell-01, aut)
+            ???(s7t/tell-01, aut) # TODO (Nov 17): don't know how to handle `tell`
             pos(s7r/report-01, aut)
             pos(s7m/meet-03, aut)
-            # pos(s7m/meet-03, s7y/you) # this may be going too far?
+            # pos(s7m/meet-03, s7y/you) # TODO (Nov 17): this may be going too far?
         )
     )
     :SNT(snt8
@@ -268,8 +271,8 @@
             before(s8m/meet-03, s8l/look-01)
         )
         :modality(
-            pos(s8i/I, aut)
-            ???(s8l/look-01, s8i/I)
+            pos(s8i/I, aut) # between modal sources
+            ???(s8l/look-01, s8i/I) # TODO (Nov 17): don't know how to handle `look`, similar to 'tell'  in snt7
             pos(s8m/meet-03, s8i/I)
         )
     )
