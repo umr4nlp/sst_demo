@@ -1,6 +1,5 @@
-# ::id NW_PRI_ENG_0147_2000_1023.3 ::date 2017-11-07T11:21:57 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.3 ::SNT1
 # ::snt Putting aside a half century of acrimony, Secretary of State, Madeleine Albright met today with North Korea's leader Kim Jong Il in Pyongyang.
-# ::save-date Mon Dec 18, 2017 ::file NW_PRI_ENG_0147_2000_1023_3.txt
 (m / meet-03
       :ARG0 (p2 / person :wiki "Madeleine_Albright" :name (n3 / name :op1 "Madeleine" :op2 "Albright")
             :ARG0-of (h / have-org-role-91
@@ -18,9 +17,8 @@
                         :unit (c / century)))
             :ARG2 (a / aside)))
 
-# ::id NW_PRI_ENG_0147_2000_1023.4 ::date 2017-11-07T11:25:42 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.4 ::SNT2
 # ::snt Part of the purpose of this historic visit is to lay the groundwork for a possible trip to North Korea by President Clinton before his term ends.
-# ::save-date Tue Nov 7, 2017 ::file NW_PRI_ENG_0147_2000_1023_4.txt
 (h / have-part-91
       :ARG1 (h2 / have-purpose-91
             :ARG1 (v / visit-01
@@ -39,9 +37,8 @@
                                     :ARG1 (t3 / term
                                           :poss p)))))))
 
-# ::id NW_PRI_ENG_0147_2000_1023.5 ::date 2017-11-07T11:30:42 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.5 ::SNT3
 # ::snt Albright's visit to Pyongyang is the first by a high level US official since the communist state was established in 1948.
-# ::save-date Wed Nov 8, 2017 ::file NW_PRI_ENG_0147_2000_1023_5.txt
 (h2 / have-ord-91
       :ARG1 (v / visit-01
             :ARG0 (p / person :wiki "Madeleine_Albright"
@@ -64,9 +61,8 @@
                                           :name (n4 / name :op1 "communism")))
                               :time (d / date-entity :year 1948))))))
 
-# ::id NW_PRI_ENG_0147_2000_1023.6 ::date 2017-11-07T11:42:30 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.6 ::SNT4
 # ::snt Kong Dan Oh is a Korean expert who has just written a book called 'North Korea through the Looking Glass'.
-# ::save-date Tue Nov 7, 2017 ::file NW_PRI_ENG_0147_2000_1023_6.txt
 (e / expert-01
       :ARG1 (p2 / person :wiki -
             :name (n5 / name :op1 "Kong" :op2 "Dan" :op3 "Oh")
@@ -79,9 +75,8 @@
                                     :name (n6 / name :op1 "North" :op2 "Korea" :op3 "through" :op4 "the" :op5 "Looking" :op6 "Glass"))))
                   :mod (j / just))))
 
-# ::id NW_PRI_ENG_0147_2000_1023.7 ::date 2017-11-07T22:18:32 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.7 ::SNT5
 # ::snt She is now in the South Korean capital of Seoul.
-# ::save-date Tue Nov 7, 2017 ::file NW_PRI_ENG_0147_2000_1023_7.txt
 (b / be-located-at-91
       :ARG1 (s / she)
       :ARG2 (c2 / city :wiki "Seoul" :name (n2 / name :op1 "Seoul")
@@ -90,9 +85,8 @@
                   :ARG2 (c3 / capital)))
       :time (n3 / now))
 
-# ::id NW_PRI_ENG_0147_2000_1023.8 ::date 2017-11-07T22:19:41 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.8 ::SNT6
 # ::snt We know that the visit is making big news there in Seoul.
-# ::save-date Wed Nov 8, 2017 ::file NW_PRI_ENG_0147_2000_1023_8.txt
 (k / know-01
       :ARG0 (w / we)
       :ARG1 (m / make-18
@@ -102,9 +96,8 @@
             :location (c / city :wiki "Seoul" :name (n / name :op1 "Seoul")
                   :location (t / there))))
 
-# ::id NW_PRI_ENG_0147_2000_1023.9 ::date 2017-11-07T22:23:47 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.9 ::SNT7
 # ::snt Can you tell us what is being reported about the meeting between the two sides from the South Korean perspective?
-# ::save-date Tue Nov 7, 2017 ::file NW_PRI_ENG_0147_2000_1023_9.txt
 (p / possible-01
       :ARG1 (t / tell-01
             :ARG0 (y / you)
@@ -117,9 +110,8 @@
             :ARG2 (w / we))
       :polarity (a / amr-unknown))
 
-# ::id NW_PRI_ENG_0147_2000_1023.10 ::date 2017-11-07T22:29:26 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.10 ::SNT8
 # ::snt Well, when I look at about six major daily newspapers, basically the top news was Madeleine Albright meeting with the Chairman Kim Jong Il.
-# ::save-date Mon Dec 18, 2017 ::file NW_PRI_ENG_0147_2000_1023_10.txt
 (n2 / news
       :mod (t2 / top)
       :domain (m / meet-03
@@ -138,9 +130,8 @@
       :mod (w / well :mode expressive)
       :mod (b / basic))
 
-# ::id NW_PRI_ENG_0147_2000_1023.11 ::date 2017-11-07T22:40:52 ::annotator SDL-AMR-09 ::preferred
+# ::id NW_PRI_ENG_0147_2000_1023.11 ::SNT9
 # ::snt And basically that indeed this is a very historic event, and some kind of euphoria and very positive upbeat feeling.
-# ::save-date Wed Nov 8, 2017 ::file NW_PRI_ENG_0147_2000_1023_11.txt
 (a / and
       :op2 (e / event
             :mod (h / history
@@ -157,113 +148,135 @@
                         :degree (v2 / very)))))
 
 ## SUPER STRUCTURE
-## in actual annotation, every node should be labeled as a variable preceded by a sentence identifier
-## these amrs are from a dialogue, which is an interesting annotating exercise and brings up new questions. I wonder if something like `:speaker` could help here.
+## these amrs are from a dialogue, which is an interesting annotating exercise and brings up new questions.
+
 (ROOT
-      :DCT -
-      :snt1(
-            :coref()
-            :temporal(
-                  :after(DCT, putting)
-                  :before putting, met)
-            )
-            :modality(
-                  :positive(AUTHOR, putting)
-                  :positive(AUTHOR, met)
-            )
-      )
-      :snt2(
-            :coref(
-                  :same(his, Clinton)
-            )
-            :temporal(
-                  :before(DCT, visit)
-                  :overlap(DCT, is)
-                  :after(is, ends)
-            )
-            :modality(
-                  :positive(AUTHOR, is)
-                  :neutral(AUTHOR, lay)
-                  :neutral(AUTHOR, trip)
-                  :positive(AUTHOR, ends)
-            )
-      )
-      :snt3(
-            :coref()
-            :temporal(
-                  :before(DCT, visit)
-                  :after(visit, was_established)
-            )
-            :modality(
-                  :positive(AUTHOR, visit)
-                  :positive(AUTHOR, is)
-                  :positive(AUTHOR, was_established)
-            )
-      )
-      :snt4(
-            :coref()
-            :temporal(
-                  :overlap(DCT, is)
-                  :after(DCT, has_written)
-            )
-            :modality(
-                  :positive(AUTHOR, is)
-                  :positive(AUTHOR, has_written)
-            )
-      )
-      :snt5(
-            :coref(
-                  :same(She, Kong Dan Oh)
-            )
-            :temporal(
-                  :overlap(DCT, is)
-            )
-            :modality(
-                  :positive(AUTHOR, is)
-            )
-      )
-      :snt6(
-            :coref(
-                  :same(we, AUTHOR) # maybe not
-            )
-            :temporal(
-                  :overlap(DCT, know) # perhaps `before` for all present verbs used during the interview?
-                  :after(know, visit)
-                  :before(visit, is_making)
-            )
-            :modality(
-                  :positive(AUTHOR, know)
-                  :positive(AUTHOR, is_making)
-            )
-      )
-      :snt7(
-            :coref(
-                  :same(you, Kong Dan Oh)
-            )
-            :temporal(
-                  :overlap(DCT, tell)
-                  :overlap(tell, is_being_reported)
-                  :after(is_being_reported, meeting)
-            )
-            :modality(
-                  :positive(AUTHOR, tell)
-                  :positive(AUTHOR, is_being_reported)
-                  :positive(AUTHOR, meeting)
-            )
-      )
-      :snt8(
-            :coref(
-                  :same(I, Kong Dan Oh)
-            )
-            :temporal(
-                  :overlap(DCT, look)
-                  :???(look, was) # no idea
-                  :after(DCT, meeting)
-            )
-            :modality(
-                  :positive(Kong Dan Oh, look)
-                  :positive(Kong Dan Oh, was)
-                  :positive(Kong Dan Oh, meeting)
-            )
-      )
+    :DCT dct
+    :aut aut
+    :SNT(snt1
+    Putting aside a half century of acrimony, Secretary of State, Madeleine Albright met today with North Korea's leader Kim Jong Il in Pyongyang.
+        :coref()
+        :temporal(
+            after(s1p/putting, dct)
+            before(s1p/putting, s1m/met) # perhaps overlap
+        )
+        :modality(
+            pos(s1p/putting, aut)
+            pos(s1m/met, aut)
+        )
+    )
+    :SNT(snt2
+    Part of the purpose of this historic visit is to lay the groundwork for a possible trip to North Korea by President Clinton before his term ends.
+        :coref() # we don't care about intra-sentential co-reference
+        :temporal(
+            before(s2v/visit, dct)
+            # ???(s2l/lay, s2v/visit)
+            after(s2e/ends, s2v/visit)
+        )
+        :modality(
+            pos(s2v/visit, aut)
+            posPrt(s2l/lay, aut) # .. to lay ...
+            neut(s2t2/trip, aut) # possible trip
+            pos(s2e/ends, aut)
+        )
+    )
+    :SNT(snt3
+    Albright's visit to Pyongyang is the first by a high level US official since the communist state was established in 1948.
+        :coref(
+            same(s3p/Madeleine_Albright, s1p2/Madeleine_Albright)
+            # what about Pyongyang in snt1 and snt3?
+        )
+        :temporal(
+            before(s3v/visit, dct)
+            before(s3e/was_establihed, s3v/visit)
+        )
+        :modality(
+            pos(s3v/visit, aut)
+            pos(s3e/was_established, aut)
+        )
+    )
+    :SNT(snt4
+    Kong Dan Oh is a Korean expert who has just written a book called 'North Korea through the Looking Glass'.
+        :coref()
+        :temporal(
+            before(s4w/has_written, dct)
+        )
+        :modality(
+            pos(s4w/has_written, aut)
+        )
+    )
+    :SNT(snt5
+    She is now in the South Korean capital of Seoul.
+        :coref(
+            same(s5s/she, s4p2/Kong_Dan_Oh)
+        )
+        :temporal(
+            overlap(s5b/be_located_at, dct)
+        )
+        :modality(
+            pos(s5b/be_located_at, aut)
+        )
+    )
+    :SNT(snt6
+    We know that the visit is making big news there in Seoul.
+        :coref(
+            # # assuming `we` refer to the agents of the interview, i.e. author and Kong Dan Oh, but this complicates our chain structure
+            # same(s6w/we, aut),
+            # same(s6w/we, s5s/she)
+        )
+        :temporal(
+            # tricky case, since we have no reporting verb but this is still a quotation
+            overlap(s6k/know, dct)
+            before(s6v/visit, s6k/know) # perhaps overlap, if visit is still happening?
+            overlap(s6m/is_making, s6v/visit)
+        )
+        :modality(
+            pos(s6k/know, aut)
+            pos(s6v/visit, aut)
+            pos(s6v/visit, s5s/she)
+            pos(s6m/is_making, aut)
+            pos(s6m/is_making, s5s/she)
+        )
+    )
+    :SNT(snt7
+    Can you tell us what is being reported about the meeting between the two sides from the South Korean perspective?
+        :coref(
+            same(s7y/you, s5s/she)
+            same(s7w/us, s6w/we)
+        )
+        :temporal(
+            overlap(s7t/tell, dct)
+            overlap(s7r/is_being_reported, s7t/tell)
+            overlap(s7m/meeting, s7r/is_being_reported)
+        )
+        :modality(
+            ???(s7t/tell, aut)
+            pos(s7r/is_being_reported, aut)
+            pos(s7m/meeting, aut)
+            # pos(s7m/meeting, s7y/you) # this may be going too far?
+        )
+    )
+    :SNT(snt8
+    Well, when I look at about six major daily newspapers, basically the top news was Madeleine Albright meeting with the Chairman Kim Jong Il.
+        :coref(
+            same(s8i/I, s7y/you)
+            same(s8p/Madeleine_Albright, s3p/Madeleine_Albright)
+            same(s8p2/King_Jong_Il, s1p3/King_Jong_Il)
+        )
+        :temporal(
+            overlap(s8l/look, dct)
+            before(s8m/meeting, s8l/look)
+        )
+        :modality(
+            pos(s8i/I, aut)
+            ???(s8l/look, s8i/I)
+            pos(s8m/meeting, s8i/I
+        )
+    )
+    :SNT(snt9 # very strange sentence, no events to speak of
+    And basically that indeed this is a very historic event, and some kind of euphoria and very positive upbeat feeling.
+        :coref()
+        :temporal()
+        :modality()
+    )
 )
