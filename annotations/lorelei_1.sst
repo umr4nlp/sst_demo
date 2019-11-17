@@ -4,26 +4,26 @@
     :SNT(snt1
         :coref()
         :temporal(
-            after(s1p/putting, dct)
-            before(s1p/putting, s1m/met) # perhaps overlap
+            after(s1p/put-01, dct)
+            before(s1p/put-01, s1m/meet-03) # perhaps overlap
         )
         :modality(
-            pos(s1p/putting, aut)
-            pos(s1m/met, aut)
+            pos(s1p/put-01, aut)
+            pos(s1m/meet-01, aut)
         )
     )
     :SNT(snt2
         :coref() # we don't care about intra-sentential co-reference
         :temporal(
-            before(s2v/visit, dct)
-            # ???(s2l/lay, s2v/visit)
-            after(s2e/ends, s2v/visit)
+            before(s2v/visit-01, dct)
+            # ???(s2l/lay-01, s2v/visit-01)
+            after(s2e/end-01, s2v/visit-01)
         )
         :modality(
-            pos(s2v/visit, aut)
-            posPrt(s2l/lay, aut) # .. to lay ...
-            neut(s2t2/trip, aut) # possible trip
-            pos(s2e/ends, aut)
+            pos(s2v/visit-01, aut)
+            posPrt(s2l/lay-01, aut) # .. to lay ...
+            neut(s2t2/trip-03, aut) # possible trip
+            pos(s2e/end-01, aut)
         )
     )
     :SNT(snt3
@@ -32,21 +32,21 @@
             # what about Pyongyang in snt1 and snt3?
         )
         :temporal(
-            before(s3v/visit, dct)
-            before(s3e/was_establihed, s3v/visit)
+            before(s3v/visit-01, dct)
+            before(s3e/establish-01, s3v/visit-01)
         )
         :modality(
-            pos(s3v/visit, aut)
-            pos(s3e/was_established, aut)
+            pos(s3v/visit-01, aut)
+            pos(s3e/establish-01, aut)
         )
     )
     :SNT(snt4
         :coref()
         :temporal(
-            before(s4w/has_written, dct)
+            before(s4w/write-01, dct)
         )
         :modality(
-            pos(s4w/has_written, aut)
+            pos(s4w/write-01, aut)
         )
     )
     :SNT(snt5
@@ -54,30 +54,30 @@
             same(s5s/she, s4p2/Kong_Dan_Oh)
         )
         :temporal(
-            overlap(s5b/be_located_at, dct)
+            overlap(s5b/be-located-at-91, dct)
         )
         :modality(
-            pos(s5b/be_located_at, aut)
+            pos(s5b/be-located-at-91, aut)
         )
     )
     :SNT(snt6
         :coref(
             # # assuming `we` refer to the agents of the interview, i.e. author and Kong Dan Oh, but this complicates our chain structure
-            # same(s6w/we, aut),
+            # same(s6w/we, aut)
             # same(s6w/we, s5s/she)
         )
         :temporal(
             # tricky case, since we have no reporting verb but this is still a quotation
-            overlap(s6k/know, dct)
-            before(s6v/visit, s6k/know) # perhaps overlap, if visit is still happening?
-            overlap(s6m/is_making, s6v/visit)
+            overlap(s6k/know-01, dct)
+            before(s6v/visit-01, s6k/know-01) # perhaps overlap, if visit is still happening?
+            overlap(s6m/make-18, s6v/visit-01)
         )
         :modality(
-            pos(s6k/know, aut)
-            pos(s6v/visit, aut)
-            pos(s6v/visit, s5s/she)
-            pos(s6m/is_making, aut)
-            pos(s6m/is_making, s5s/she)
+            pos(s6k/know-01, aut)
+            pos(s6v/visit-01, aut)
+            pos(s6v/visit-01, s5s/she)
+            pos(s6m/make-18, aut)
+            pos(s6m/make-18, s5s/she)
         )
     )
     :SNT(snt7
@@ -86,15 +86,15 @@
             same(s7w/us, s6w/we)
         )
         :temporal(
-            overlap(s7t/tell, dct)
-            overlap(s7r/is_being_reported, s7t/tell)
-            overlap(s7m/meeting, s7r/is_being_reported)
+            overlap(s7t/tell-01, dct)
+            overlap(s7r/report-01, s7t/tell-01)
+            overlap(s7m/meet-03, s7r/report-01)
         )
         :modality(
-            ???(s7t/tell, aut)
-            pos(s7r/is_being_reported, aut)
-            pos(s7m/meeting, aut)
-            # pos(s7m/meeting, s7y/you) # this may be going too far?
+            ???(s7t/tell-01, aut)
+            pos(s7r/report-01, aut)
+            pos(s7m/meet-03, aut)
+            # pos(s7m/meet-03, s7y/you) # this may be going too far?
         )
     )
     :SNT(snt8
@@ -104,13 +104,13 @@
             same(s8p2/King_Jong_Il, s1p3/King_Jong_Il)
         )
         :temporal(
-            overlap(s8l/look, dct)
-            before(s8m/meeting, s8l/look)
+            overlap(s8l/look-01, dct)
+            before(s8m/meet-03, s8l/look-01)
         )
         :modality(
             pos(s8i/I, aut)
-            ???(s8l/look, s8i/I)
-            pos(s8m/meeting, s8i/I
+            ???(s8l/look-01, s8i/I)
+            pos(s8m/meet-03, s8i/I)
         )
     )
     :SNT(snt9 # very strange sentence, no events to speak of
