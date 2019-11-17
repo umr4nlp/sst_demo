@@ -1,0 +1,288 @@
+# ::id PROXY_LTW_ENG_20070831_0072.1 ::SNT1
+# ::snt 2007-08-21
+(d / date-entity :year 2007 :month 8 :day 21)
+
+# ::id PROXY_LTW_ENG_20070831_0072.2 ::dSNT2
+# ::snt Iran (Islamic Republic of) (IR)
+(c / country :wiki "Iran"
+      :name (n / name :op1 "Islamic" :op2 "Republic" :op3 "of" :op4 "Iran"))
+
+# ::id PROXY_LTW_ENG_20070831_0072.3 ::SNT3
+# ::snt International; weapons; politics; proliferation; energy
+(a / and
+      :op1 (i / international)
+      :op2 (w / weapon)
+      :op3 (p / politics)
+      :op4 (p2 / proliferate-01)
+      :op5 (e / energy))
+
+# ::id PROXY_LTW_ENG_20070831_0072.4 ::SNT4
+# ::snt The International Atomic Energy Agency reached an agreement with Iranian officials that stated there were no remaining issues and ambiguities regarding Iran's nuclear program and activities.
+(r3 / reach-01
+      :ARG0 (o / organization :wiki "International_Atomic_Energy_Agency" :name (n / name :op1 "International" :op2 "Atomic" :op3 "Energy" :op4 "Agency"))
+      :ARG1 (a / agree-01
+            :ARG0 o
+            :ARG2 (p2 / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country :wiki "Iran" :name (n2 / name :op1 "Iran"))
+                        :ARG2 (o2 / official)))
+            :ARG0-of (s / state-01
+                  :ARG1 (a2 / and
+                        :op1 (i / issue-02 :polarity -
+                              :ARG1-of (r / remain-01))
+                        :op2 (a3 / ambiguity :polarity -
+                              :ARG1-of r)
+                        :ARG0-of (r2 / regard-01
+                              :ARG1 (a4 / and
+                                    :op1 (p / program
+                                          :mod (n3 / nucleus)
+                                          :poss c)
+                                    :op2 (a5 / activity-06
+                                          :ARG0 c
+                                          :mod n3)))))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.5 ::SNT5
+# ::snt U.S. and European officials suspect that Iran's civilian nuclear energy program masks an effort to obtain technology that could be used in the production of an atomic bomb.
+(s / suspect-01
+      :ARG0 (a / and
+            :op1 (p3 / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country :wiki "United_States" :name (n / name :op1 "U.S."))
+                        :ARG2 (o / official)))
+            :op2 (p5 / person
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (c2 / continent :wiki "Europe" :name (n2 / name :op1 "Europe"))
+                        :ARG2 (o3 / official))))
+      :ARG1 (m / mask-01
+            :ARG1 (e2 / effort-01
+                  :ARG1 (o2 / obtain-01
+                        :ARG1 (t / technology
+                              :ARG1-of (u2 / use-01
+                                    :ARG2 (p2 / produce-01
+                                          :ARG1 (b / bomb
+                                                :mod (a2 / atom)))
+                                    :ARG1-of (p4 / possible-01)))))
+            :ARG2 (p / program
+                  :mod (e / energy
+                        :mod (n3 / nucleus)
+                        :mod (c3 / civilian))
+                  :poss (c4 / country :wiki "Iran" :name (n4 / name :op1 "Iran")))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.6 ::SNT6
+# ::snt U.S. and European officials suspect that Iran's civilian nuclear energy program masks an effort to obtain technology that could be used in the production of an atomic bomb.
+(s / suspect-01
+      :ARG0 (a / and
+            :op1 (p3 / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country :wiki "United_States" :name (n / name :op1 "U.S."))
+                        :ARG2 (o / official)))
+            :op2 (p5 / person
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (c2 / continent :wiki "Europe" :name (n2 / name :op1 "Europe"))
+                        :ARG2 (o3 / official))))
+      :ARG1 (m / mask-01
+            :ARG1 (e2 / effort-01
+                  :ARG1 (o2 / obtain-01
+                        :ARG1 (t / technology
+                              :ARG1-of (u2 / use-01
+                                    :ARG2 (p2 / produce-01
+                                          :ARG1 (b / bomb
+                                                :mod (a2 / atom)))
+                                    :ARG1-of (p4 / possible-01)))))
+            :ARG2 (p / program
+                  :mod (e / energy
+                        :mod (n3 / nucleus)
+                        :mod (c3 / civilian))
+                  :poss (c4 / country :wiki "Iran" :name (n4 / name :op1 "Iran")))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.7 ::SNT7
+# ::snt U.S. and European officials may impose a 4th round of sanctions on Tehran when the U.N. Security Council considers the issue of Iran's nuclear energy program most likely in September 2007.
+(p / possible-01
+      :ARG1 (i / impose-01
+            :ARG0 (a2 / and
+                  :op1 (p3 / person
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (c / country :wiki "United_States" :name (n / name :op1 "U.S."))
+                              :ARG2 (o3 / official)))
+                  :op2 (p4 / person
+                        :ARG0-of (h2 / have-org-role-91
+                              :ARG1 (c2 / continent :wiki "Europe" :name (n2 / name :op1 "Europe"))
+                              :ARG2 (o4 / official))))
+            :ARG1 (r / round-05
+                  :ARG1 (s / sanction-02
+                        :ARG0 a2
+                        :ARG1 (c3 / city :wiki "Tehran" :name (n3 / name :op1 "Tehran"))
+                        :time (c4 / consider-02
+                              :ARG0 (o2 / organization :wiki "United_Nations_Security_Council" :name (n4 / name :op1 "U.N." :op2 "Security" :op3 "Council"))
+                              :ARG1 (i2 / issue-02
+                                    :ARG0 (p2 / program
+                                          :mod (e / energy
+                                                :mod (n5 / nucleus))
+                                          :poss (c5 / country :wiki "Iran" :name (n6 / name :op1 "Iran"))))
+                              :time (d / date-entity :year 2007 :month 9
+                                    :ARG1-of (l / likely-01
+                                          :mod (m / most)))))
+                  :ord (o / ordinal-entity :value 4))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.8 ::SNT8
+# ::snt The International Atomic Energy Agency distributed limited copies of the IAEA report before a meeting on 11 September 2007 of the 35 members of the IAEA board.
+(d / distribute-01
+      :ARG0 (o / organization :wiki "International_Atomic_Energy_Agency"
+            :name (n / name :op1 "International" :op2 "Atomic" :op3 "Energy" :op4 "Agency"))
+      :ARG1 (p2 / publication
+            :ARG2-of (c / copy-01
+                  :ARG1 (t / thing
+                        :ARG1-of (r / report-01
+                              :ARG0 (o2 / organization :wiki "International_Atomic_Energy_Agency"
+                                    :name (n2 / name :op1 "IAEA")))))
+            :ARG1-of (l / limit-01))
+      :time (b / before
+            :op1 (m / meet-03
+                  :ARG0 (p / person :quant 35
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (b2 / board
+                                    :poss o)
+                              :ARG2 (m2 / member)))
+                  :time (d2 / date-entity :year 2007 :month 9 :day 11))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.9 ::SNT9
+# ::snt The findings reflect an agency agreement on 21 August 2007 with Tehran that Iranian officials began publicizing the week of 12 August 2007.
+(r / reflect-01
+      :ARG1 (t / thing
+            :ARG1-of (f / find-01))
+      :ARG2 (a / agree-01
+            :ARG0 (a2 / agency)
+            :ARG2 (c / city :wiki "Tehran" :name (n / name :op1 "Tehran"))
+            :time (d / date-entity :year 2007 :month 8 :day 21)
+            :ARG1-of (p / publicize-01
+                  :ARG0 (p2 / person
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (c2 / country :wiki "Iran" :name (n2 / name :op1 "Iran"))
+                              :ARG2 (o / official)))
+                  :ARG1-of (b / begin-01
+                        :ARG0 o)
+                  :time (w / week
+                        :mod (d2 / date-entity :year 2007 :month 8 :day 12)))))
+
+
+(ROOT
+    # :DCT s1d/2007-08-21 # explicit document creation time # is this really the dct? It may not be..
+    : DCT dct
+    :AUTOR aut
+    :SNT(snt1
+    2007-08-21
+        :coref()
+        :temporal()
+        :modality()
+    )
+    :SNT(snt2
+    Iran (Islamic Republic of) (IR)
+        :coref()
+        :temporal()
+        :modality()
+    )
+    :SNT(snt3
+    International; weapons; politics; proliferation; energy
+        :coref()
+        :temporal()
+        :modality()
+    )
+    :SNT(snt4
+        :coref(
+            same(s4c/Iran, s2c/Iran)
+        )
+        :temporal(
+            before(s4r3/reached, dct),
+            overlap(s4a/agreement, s4r3/reached), # mwe
+            overlap(s4s/stated, s4a/agreement), ## `reached agreement that stated` hard to establish temporal links here
+            before(s4i/issues, s4s/stated),
+            before(s4a3/ambiguities, s4s/stated)
+        )
+        :modality(
+            pos(s4r3/reached, aut),
+            pos(s4a/agreement, aut),
+            pos(s4s/stated, aut),
+            pos(s4o/IAEA, aut),
+            pos(s4p2/Iranian_officials, aut),
+            neg(s4o/IAEA, s4i/issues),
+            neg(s4p2/Iranian_officials, s4i/issues),
+            neg(s4o/IAEA, s4a3/ambiguities),
+            neg(s4p2/Iranian_officials, s4a3/ambiguities),
+        )
+    )
+    :SNT(snt5
+        :coref(
+            same(s5c4/Iran, s4c/Iran)
+        )
+        :temporal(
+            overlap(s5s/suspect, dct),
+            overlap(s5m/masks, s5s/suspect),
+            # no dependency between `masks` and `obtain` in `masks an effort to obtain`
+            # no links to hypothetical events
+        )
+        :modality(
+            ## if modal_source is `A and B`, should we assign `A` and `B` separate nodes or a single one of `A && B`? The former for now
+            pos(s5s/suspect, aut),
+            pos(s5p3/us_officials, aut),
+            pos(s5p5/european_officials, aut),
+            pos(s5m/masks, s5p3/us_officials),
+            pos(s5m/masks, s5p5/european_officials),
+            posPrt(s5o2/obtain, s5p3/us_officials),
+            posPrt(s5o2/obtain, s5p5/european_officials),
+            neut(s5u2/used, s5p3/us_officials),
+            neut(s5u2/used, s5p5/european_officials),
+            neut(s5p2/production, s5p3/us_officials),
+            neut(s5p2/production, s5p5/european_officials)
+        )
+    )
+    :SNT(snt6
+        ### !! snt5 and snt6 are the same, not sure why duplicates exist
+    )
+    :SNT(snt7
+        :coref(
+            same(s7p3/us_officials, s5p3/us_officials),
+            same(s7p4/european_officials, s5p5/european_officials),
+            same(s7c5/Iran, s4c/Iran) # no link to Tehran
+            # no link to `Iran's nuclear programs` which shows up repeatedly
+        )
+        :temporal(
+            # all hypothetical statements
+            # except `UN considers ..`
+            after(s7c4/considers, dct)
+            # is `issue of Iran's nuclear energy program` an event?
+        )
+        :modality(
+            neut(s7i/may_impose, aut),
+            neut(s7s/sanction, aut),
+            pos(s7c4/considers, aut),
+            # is `issue of Iran's nuclear energy program` an event?
+        )
+    )
+    :SNT(snt8
+        # coref error in the amr: s8o and s8o2 both refer to the same entity, and should have been captured by a single variable. Our annotation nevertheless builds on the original amr with the error, which may actually fix the error through the subsequent tree super-structure
+        :coref(
+            same(s8o/The_International_Atomic_Energy_Agency, s4o/The_International_Atomic_Energy_Agency),
+            same(s8o2/IAEA, s4o/The_International_Atomic_Energy_Agency)
+        )
+        :temporal(
+            # before(s8d/distributed, s8m/meeting) # captured within amr
+            before(s8d/distributed, dct)
+        )
+        :modality(
+            pos(s8d/distributed, aut),
+            pos(s8m/meeting, aut)
+        )
+    )
+    :SNT(snt9
+    ## ?????
+        :coref(
+            same(s9c2/Iran, s7c5/Iran)
+            # no link to `Iranian officials` ?
+        )
+        :temporal(
+            overlap(s9r/reflect, )
+            before(s9b/began,
+        )
+        :modality()
+    )
+)

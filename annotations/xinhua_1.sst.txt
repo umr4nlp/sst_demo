@@ -1,0 +1,572 @@
+# ::id nw.chtb_0322.2 ::SNT1
+# ::snt The first " Le Tian Cup " China and Korea Go competition started today at Fushan , the second largest city of Korea .
+(s / start-01
+      :ARG1 (c6 / compete-01 :wiki -
+            :ARG0 (c5 / country :wiki "China"
+                  :name (n5 / name :op1 "China"))
+            :ARG1 c4
+            :name (n6 / name :op1 "Le" :op2 "Tian" :op3 "Cup")
+            :mod (g2 / game :wiki "Go_(game)"
+                  :name (n2 / name :op1 "Go")))
+      :location (c3 / city :wiki "Busan"
+            :name (n3 / name :op1 "Fushan")
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (l2 / large
+                        :ord (o / ordinal-entity :value 2))
+                  :ARG3 (m / most)
+                  :ARG5 (c / city
+                        :location (c4 / country :wiki "Korea"
+                              :name (n4 / name :op1 "Korea")))))
+      :time (t / today))
+
+# ::id nw.chtb_0322.3 ::SNT2
+# ::snt In the first round of competition , the Chinese team defeated the relatively stronger Korean team with a score of 4 : 3 .
+(d / defeat-01
+      :ARG0 (t / team
+            :mod (c4 / country :wiki "China" :name (n / name :op1 "China")))
+      :ARG1 (t2 / team
+            :mod (c5 / country :wiki "Korea" :name (n2 / name :op1 "Korea"))
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (s / strong-02
+                        :ARG1 t2
+                        :ARG2-of (r2 / relative-05))
+                  :ARG3 (m / more)
+                  :ARG4 t))
+      :time (r / round-05
+            :ARG1 (c / compete-01)
+            :ord (o / ordinal-entity :value 1))
+      :quant (s2 / score-entity :op1 4 :op2 3))
+
+# ::id nw.chtb_0322.4 ::SNT3
+# ::snt In the competition today , both sides each have 7 Go players participating .
+(h / have-03
+      :ARG0 (s / side
+            :mod (b / both)
+            :mod (e2 / each))
+      :ARG1 (p2 / person :quant 7
+            :ARG0-of (p3 / play-01
+                  :ARG1 (g / game :wiki "Go_(game)"
+                        :name (n / name :op1 "Go")))
+            :ARG0-of (c / compete-01
+                  :time (t / today))))
+
+# ::id nw.chtb_0322.5 ::SNT4
+# ::snt Weiping Nie ( 9th level ) , Xiaoguang Liu ( 9th level ) , Hao Chang ( 6th level ) and Dayuan Cao ( 9th level ) from the Chinese team defeated Guibing Cui ( 6th level ) , Xiuying Zhang ( 9th level ) , Fengzhu Xu ( 9th level ) and Xuange Lin ( 8th level ) from the Korean team respectively .
+(a3 / and
+      :op1 (d / defeat-01
+            :ARG0 (p9 / person :wiki "Nie_Weiping" :name (n / name :op1 "Weiping" :op2 "Nie")
+                  :mod (l / level
+                        :ord (o / ordinal-entity :value 9))
+                  :part-of (t / team
+                        :mod (c4 / country :wiki "China" :name (n5 / name :op1 "China"))))
+            :ARG1 (p13 / person :wiki - :name (n6 / name :op1 "Guibing" :op2 "Cui")
+                  :mod l2
+                  :part-of (t2 / team
+                        :mod (c5 / country :wiki "Korea" :name (n10 / name :op1 "Korea")))))
+      :op2 (d3 / defeat-01
+            :ARG0 (p10 / person :wiki "Liu_Xiaoguang" :name (n2 / name :op1 "Xiaoguang" :op2 "Liu")
+                  :mod l
+                  :part-of t)
+            :ARG1 (p14 / person :wiki - :name (n7 / name :op1 "Xiuying" :op2 "Zhang")
+                  :mod l
+                  :part-of t2))
+      :op3 (d4 / defeat-01
+            :ARG0 (p11 / person :wiki "Chang_Hao" :name (n3 / name :op1 "Hao" :op2 "Chang")
+                  :mod (l2 / level
+                        :ord (o2 / ordinal-entity :value 6))
+                  :part-of t)
+            :ARG1 (p15 / person :wiki - :name (n8 / name :op1 "Fengzhu" :op2 "Xu")
+                  :mod l
+                  :part-of t2))
+      :op4 (d2 / defeat-01
+            :ARG0 (p12 / person :wiki "Cao_Dayuan" :name (n4 / name :op1 "Dayuan" :op2 "Cao")
+                  :mod l
+                  :part-of t)
+            :ARG1 (p16 / person :wiki - :name (n9 / name :op1 "Xuange" :op2 "Lin")
+                  :mod (l3 / level
+                        :ord (o3 / ordinal-entity :value 8))
+                  :part-of t2)))
+
+# ::id nw.chtb_0322.6 ::SNT5
+# ::snt Among which , Weiping Nie , Xiaoguang Liu and Hao Chang both achieved victories in the middle games .
+(w / win-01
+      :ARG0 (a2 / and
+            :op1 (p4 / person :wiki "Liu_Xiaoguang" :name (n / name :op1 "Xiaoguang" :op2 "Liu"))
+            :op2 (p5 / person :wiki "Chang_Hao" :name (n2 / name :op1 "Hao" :op2 "Chang"))
+            :op3 (p6 / person :wiki "Nie_Weiping" :name (n3 / name :op1 "Weiping" :op2 "Nie")))
+      :ARG2 (g / game
+            :mod (m / middle))
+      :ARG1-of (i / include-91))
+
+# ::id nw.chtb_0322.7 ::SNT6
+# ::snt Dayuan Cao achieved victory with an advantage of seven and a half ' mu ' .
+(w / win-01
+      :ARG0 (p2 / person :wiki "Cao_Dayuan" :name (n / name :op1 "Dayuan" :op2 "Cao"))
+      :manner (a / advantage-01
+            :ARG2 p2
+            :extent (m / mu :quant 7.5)))
+
+# ::id nw.chtb_0322.8 ::SNT7
+# ::snt Xunxuan Cao ( 9th level ) , Changhao Li ( 7th level ) and Changhe Liu ( 6th level ) from the Korean team defeated Jing Liu ( 5th level ) , Xiaocun Ma ( 9th level ) and Jianhong Wang ( 7th level ) from the Chinese team respectively .
+(a3 / and
+      :op1 (d2 / defeat-01
+            :ARG0 (p7 / person :wiki - :name (n / name :op1 "XunXuan" :op2 "Cao")
+                  :mod (l / level
+                        :ord (o / ordinal-entity :value 9))
+                  :part-of (t / team
+                        :mod (c6 / country :wiki "Korea" :name (n4 / name :op1 "Korea"))))
+            :ARG1 (p10 / person :wiki - :name (n5 / name :op1 "Jing" :op2 "Lui")
+                  :mod (l4 / level
+                        :ord (o4 / ordinal-entity :value 5))
+                  :part-of (t2 / team
+                        :mod (c7 / country :wiki "China" :name (n8 / name :op1 "China")))))
+      :op2 (d3 / defeat-01
+            :ARG0 (p8 / person :wiki - :name (n2 / name :op1 "Changhao" :op2 "Li")
+                  :mod (l2 / level
+                        :ord (o2 / ordinal-entity :value 7))
+                  :part-of t)
+            :ARG1 (p11 / person :wiki "Ma_Xiaochun" :name (n6 / name :op1 "Xiaocun" :op2 "Ma")
+                  :mod l
+                  :part-of t2))
+      :op3 (d / defeat-01
+            :ARG0 (p9 / person :wiki - :name (n3 / name :op1 "Changhe" :op2 "Liu")
+                  :mod (l3 / level
+                        :ord (o3 / ordinal-entity :value 6))
+                  :part-of t)
+            :ARG1 (p12 / person :wiki - :name (n7 / name :op1 "Jianhong" :op2 "Wang")
+                  :mod l2
+                  :part-of t2)))
+
+# ::id nw.chtb_0322.9 ::SNT8
+# ::snt Among which , Xunxuan Cao achieved a victory in the middle game .
+(w / win-01
+      :ARG0 (p2 / person :wiki - :name (n / name :op1 "XunXuan" :op2 "Cao"))
+      :ARG2 (g / game
+            :mod (m / middle))
+      :ARG1-of (i / include-91))
+
+# ::id nw.chtb_0322.10 ::SNT9
+# ::snt Changhao Li and Changhe Liu achieved victories with advantages of six and a half ' mu ' and seven and a half ' mu ' respectively .
+(a / and
+      :op1 (w / win-01
+            :ARG0 (p3 / person :wiki - :name (n / name :op1 "Changhao" :op2 "Li"))
+            :manner (a2 / advantage-01
+                  :ARG2 p3
+                  :extent (m / mu :quant 6.5)))
+      :op2 (w2 / win-01
+            :ARG0 (p4 / person :wiki - :name (n2 / name :op1 "Changhe" :op2 "Liu"))
+            :manner (a3 / advantage-01
+                  :ARG2 p4
+                  :extent (m2 / mu :quant 7.5))))
+
+# ::id nw.chtb_0322.11 ::SNT10
+# ::snt When receiving reporters telephone interviews , Runan Wang , leader of the Chinese delegation presented that , overall speaking , the strength of the Korean team was stronger than the Chinese team .
+(p / present-01
+      :ARG0 (p2 / person :wiki - :name (n / name :op1 "Runan" :op2 "Wang")
+            :ARG0-of (l / lead-02
+                  :ARG1 (d / delegation
+                        :source (c4 / country :wiki "China" :name (n2 / name :op1 "China")))))
+      :ARG1 (h / have-degree-91
+            :ARG1 (s2 / strong-02
+                  :ARG1 (t / team
+                        :mod (c5 / country :wiki "Korea" :name (n3 / name :op1 "Korea"))))
+            :ARG2 (s / strong-02)
+            :ARG3 (m / more)
+            :ARG4 (s3 / strong-02
+                  :ARG1 (t2 / team
+                        :mod c4))
+            :manner (s5 / speak-01
+                  :manner (o / overall)))
+      :time (r2 / receive-01
+            :ARG0 p2
+            :ARG1 (i / interview-01
+                  :ARG0 p3
+                  :medium (t4 / telephone))
+            :ARG2 (p3 / person
+                  :ARG0-of (r3 / report-01))))
+
+# ::id nw.chtb_0322.12 ::SNT11
+# ::snt However , the Chinese team performed better today , and therefore achieved victory .
+(c5 / contrast-01
+      :ARG2 (p / perform-01
+            :ARG0 (t / team
+                  :mod (c3 / country :wiki "China" :name (n / name :op1 "China")))
+            :ARG0-of (c6 / cause-01
+                  :ARG1 (w / win-01
+                        :ARG0 t))
+            :time (t2 / today)
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g / good-02
+                        :ARG1 p)
+                  :ARG3 (m2 / more))))
+
+# ::id nw.chtb_0322.13 ::SNT12
+# ::snt The performance of our young competitor , Hao Chang , was especially outstanding today , defeating Fengzhu Xu of the Korean team in the middle game .
+(s / stand-out-06
+      :ARG1 (p4 / perform-01
+            :ARG0 (p3 / person :wiki "Chang_Hao"
+                  :name (n / name :op1 "Hao" :op2 "Chang")
+                  :ARG0-of (c2 / compete-01)
+                  :mod (y / young)
+                  :ARG0-of (d / defeat-01
+                        :ARG1 (p5 / person :wiki -
+                              :name (n2 / name :op1 "Fengzhu" :op2 "Xu")
+                              :part-of (t / team
+                                    :mod (c3 / country :wiki "Korea"
+                                          :name (n3 / name :op1 "Korea"))))
+                        :time (g / game
+                              :mod (m / middle)))
+                  :poss (w / we)))
+      :time (t2 / today)
+      :degree (e / especially))
+
+# ::id nw.chtb_0322.14 ::SNT13
+# ::snt Fengzhu Xu has won many championships in international competitions before .
+(w / win-01
+      :ARG0 (p2 / person :wiki - :name (n / name :op1 "Fengzhu" :op2 "Xu"))
+      :ARG1 (c / championship-02
+            :ARG0 p2
+            :quant (m / many))
+      :time (b / before)
+      :part-of (c2 / compete-01
+            :mod (i / international)))
+
+# ::id nw.chtb_0322.15 ::SNT14
+# ::snt He had achieved complete victory in nine games with Chinese Go players before .
+(w / win-01
+      :ARG0 (h / he)
+      :ARG2 (g / game :quant 9
+            :ARG1-of (p / play-01
+                  :ARG0 h
+                  :ARG3 (p2 / person
+                        :mod (c4 / country :wiki "China" :name (n / name :op1 "China"))
+                        :ARG0-of (p3 / play-01
+                              :ARG1 (g2 / game :wiki "Go_(game)" :name (n2 / name :op1 "Go"))))))
+      :ARG1-of (c / complete-02)
+      :time (b / before))
+
+# ::id nw.chtb_0322.16 ::SNT15
+# ::snt The Go teams from China and Korea will shift to Seoul on September 1st , and will hold the second competition in the Le Tian Hotel on the 2nd .
+(a / and
+      :op1 (s2 / shift-01
+            :ARG1 (a2 / and
+                  :op1 (t / team
+                        :mod (c5 / country :wiki "China"
+                              :name (n2 / name :op1 "China"))
+                        :mod (g2 / game :wiki "Go_(game)"
+                              :name (n5 / name :op1 "Go")))
+                  :op2 (t2 / team
+                        :mod (c6 / country :wiki "Korea"
+                              :name (n / name :op1 "Korea"))
+                        :mod g2))
+            :ARG2 (c7 / city :wiki "Seoul"
+                  :name (n3 / name :op1 "Seoul"))
+            :time (d3 / date-entity :month 9 :day 1))
+      :op2 (c / compete-01
+            :ARG0 t
+            :ARG1 t2
+            :ord (o / ordinal-entity :value 2)
+            :location (h2 / hotel :wiki -
+                  :name (n4 / name :op1 "Le" :op2 "Tian" :op3 "Hotel"))
+            :time (d4 / date-entity :day 2)))
+
+# ::id nw.chtb_0322.17 ::SNT16
+# ::snt According to the rules discussed and agreed upon by both sides , if the two teams draw with 7 : 7 , then the final result will be determined by the result of the competition between Weiping Nie of the Chinese team and Xunxuan Cao of the Korean team .
+(d2 / determine-01
+      :ARG0 (t4 / thing
+            :ARG2-of (r3 / result-01
+                  :ARG1 (c4 / compete-01
+                        :ARG0 (p3 / person :wiki "Nie_Weiping" :name (n / name :op1 "Weiping" :op2 "Nie")
+                              :part-of (t / team
+                                    :mod (c5 / country :wiki "China" :name (n2 / name :op1 "China"))))
+                        :ARG1 (p4 / person :wiki - :name (n3 / name :op1 "XunXuan" :op2 "Cao")
+                              :part-of (t2 / team
+                                    :mod (c6 / country :wiki "Korea" :name (n4 / name :op1 "Korea")))))))
+      :ARG1 (r2 / result-01
+            :mod (f / final))
+      :condition (d3 / draw-02
+            :ARG0 (a2 / and
+                  :op1 t
+                  :op2 t2)
+            :ARG1 (s / score-entity :op1 7 :op2 7))
+      :ARG1-of (c / conform-01
+            :ARG2 (r / rule
+                  :ARG1-of (d / discuss-01
+                        :ARG0 (s2 / side
+                              :mod (b / both)))
+                  :ARG1-of (a / agree-01
+                        :ARG0 s2))))
+
+# ::id nw.chtb_0322.18 ::SNT17
+# ::snt The prize money of the competition this time is 100,000 US dollars , the team that wins will get 70,000 US dollars , while the team that loses will get 30,000 US dollars .
+(m / multi-sentence
+      :snt1 (m4 / monetary-quantity :quant 100000
+            :unit (d4 / dollar
+                  :mod (c4 / country :wiki "United_States" :name (n4 / name :op1 "United" :op2 "States")))
+            :domain (m5 / money
+                  :mod (p / prize)
+                  :ARG2-of (c / compete-01))
+            :time (t / time
+                  :mod (t2 / this)))
+      :snt2 (a / and
+            :op1 (g / get-01
+                  :ARG0 (t3 / team
+                        :ARG0-of (w / win-01
+                              :ARG1 m6
+                              :ARG2 c))
+                  :ARG1 (m6 / monetary-quantity :quant 70000
+                        :unit (d / dollar
+                              :mod c4)))
+            :op2 (g2 / get-01
+                  :ARG0 (t4 / team
+                        :ARG0-of (l / lose-03))
+                  :ARG1 (m7 / monetary-quantity :quant 30000
+                        :unit (d2 / dollar
+                              :mod c4)))))
+
+* for temporal triples, assume tentatively that the current-sentence-vars is prioritized into ARG1, meaning out-of-sentence vars will likely be placed in ARG2
+
+(ROOT
+    :DCT dct
+    :AUTHOR aut
+    :SNT(snt1
+    The first " Le Tian Cup " China and Korea Go competition started today at Fushan , the second largest city of Korea .
+        :coref()
+        :temporal(
+            # aspectual_link(competition, started) # TimeBANk TODO(1)
+            before(s1s/started, dct)
+        )
+        :modality(
+            pos(aut, s1s/started)
+        )
+    )
+    :SNT(snt2
+    In the first round of competition , the Chinese team defeated the relatively stronger Korean team with a score of 4 : 3 .
+        :coref()
+        :temporal(
+            after(s2d/defeated, s1s/started)
+        )
+        :modality(
+            pos(aut, s2d/defeated) # TODO(2): consistency with temp
+        )
+    )
+    :SNT(snt3
+    In the competition today , both sides each have 7 Go players participating .
+        :coref()
+        :temporal(
+            overlap(s3h/have, dct),
+            overlap(s3h/have, # doesn't have `participating` as a node)
+        )
+        :modality(
+            pos(aut, s3h/have)
+        )
+    )
+    :SNT(snt4
+    Weiping Nie ( 9th level ) , Xiaoguang Liu ( 9th level ) , Hao Chang ( 6th level ) and Dayuan Cao ( 9th level ) from the Chinese team defeated Guibing Cui ( 6th level ) , Xiuying Zhang ( 9th level ) , Fengzhu Xu ( 9th level ) and Xuange Lin ( 8th level ) from the Korean team respectively .
+        :coref()
+        :temporal(
+            before(s4d/defeated, s2d/defeated), # TODO (Quant)
+            before(s4d3/defeated, s2d/defeated),
+            before(s4d4/defeated, s2d/defeated),
+            before(s4d2/defeated, s2d/defeated),
+        )
+        :modality(
+            pos(aut, s4d/defeated),
+            pos(aut, s4d3/defeated),
+            pos(aut, s4d4/defeated),
+            pos(aut, s4d2/defeated)
+        )
+    )
+    :SNT(snt5
+    Among which , Weiping Nie , Xiaoguang Liu and Hao Chang both achieved victories in the middle games .
+        :coref(
+            same(s5p4/Liu_Xiaoguang, s4p10/Liu_Xiaoguang),
+            same(s5p5/Chang_Hao, s4p11/Chang_Hao),
+            same(s5p6/Nie_Weiping, s4p9/Nie_Weiping)
+        )
+        :temporal(
+            overlap(s5w/achieved_victories, s4d/defeated), # ???
+            overlap(s5w/achieved_victories, s4d3/defeated), # ???
+            overlap(s5w/achieved_victories, s4d4/defeated) # ???
+        )
+        :modality(
+            pos(aut, s5w/achieved)
+        )
+    )
+    :SNT(snt6
+    Dayuan Cao achieved victory with an advantage of seven and a half ' mu ' .
+        :coref(
+            :same(s6p2/Cao_Dayuan, s4p12/Cao_Dayuan)
+        )
+        :temporal(
+            overlap(s6w/achieved, s4d2/defeated)
+        )
+        :modality(
+            pos(aut, s6w/achieved)
+        )
+    )
+    :SNT(snt7
+    Xunxuan Cao ( 9th level ) , Changhao Li ( 7th level ) and Changhe Liu ( 6th level ) from the Korean team defeated Jing Liu ( 5th level ) , Xiaocun Ma ( 9th level ) and Jianhong Wang ( 7th level ) from the Chinese team respectively .
+        :coref()
+        :temporal(
+            before(s7d2/defeated, s2d/defeated),
+            before(s7d3/defeated, s2d/defeated),
+            before(s7d/defeated, s2d/defeated)
+        )
+        :modality(
+            pos(aut, s7d2/defeated),
+            pos(aut, s7d3/defeated),
+            pos(aut, s7d/defeated)
+        )
+    )
+    :SNT(snt8
+    Among which , Xunxuan Cao achieved a victory in the middle game .
+        :coref(
+            :same(s8p2/Xunxuan_Cao, s7p7/Xunxuan_Cao)
+        )
+        :temporal(
+            overlap(s8w/achieved, s7d2/defeated)
+        )
+        :modality(
+            pos(aut, s8w/achieved)
+        )
+    )
+    :SNT(snt9
+    Changhao Li and Changhe Liu achieved victories with advantages of six and a half ' mu ' and seven and a half ' mu ' respectively .
+        :coref(
+            same(s9p3/Changhao_Li, s7p8/Changhao_Li),
+            same(s9p4/Change_Liu, s7p9/Changhe_Liu)
+        )
+        :temporal(
+            overlap(s9w/achieved, s7d3/defeated),
+            overlap(s9w2/achieved, s7d/defeated)
+        )
+        :modality(
+            pos(aut, s9w/achieved),
+            pos(aut, s9w2, achieved)
+        )
+    )
+    :SNT(snt10
+    When receiving reporters telephone interviews , Runan Wang , leader of the Chinese delegation presented that , overall speaking , the strength of the Korean team was stronger than the Chinese team .
+        :coref()
+        :temporal(
+
+            before(s10r2/receiving, s10p/presented),
+            before(s10p/presented, dct) or after(s10p/presented, s2d/defeated), # latter seems correct
+            overlap(s10h/was_stronger_have_degree_91, s10p/presented)
+        )
+        :modality(
+            pos(aut, s10r2/receiving),
+            pos(aut, s10p/presented),
+
+            pos(aut, s10p/Runan_Wang),
+            pos(s10p/Runan_Wang, s10h/was_stronger)
+        )
+    )
+    :SNT(snt11
+    However , the Chinese team performed better today , and therefore achieved victory .
+        :coref()
+        :temporal(
+            before(s11p/performed, s10p/presented),
+            after(s11w/achieved_victory, s11p/performed)
+        )
+        :modality(
+            pos(aut, s10p/Runan_Wang), # unnecessary, since I already defined this triple in snt10
+            pos(s10p/Runan_Wang, s11p/performed),
+            pos(s10p/Runan_Wang, s11w/achieved_victory)
+        )
+    )
+    :SNT(snt12
+    The performance of our young competitor , Hao Chang , was especially outstanding today , defeating Fengzhu Xu of the Korean team in the middle game .
+        :coref(
+            same(s12p3/Hao_Chang, s5p5/Hao_Chang),
+            same(s12p5/Fungzhu_Xu, s4p15/Fungzhu_Xu)
+        )
+        :temporal(
+            before(s12s/was_outstanding, s10p/presented),
+            # after(s12d/defeating, s12s/was_outstanding) # TODO: no states as ref
+            after(s12d/defeating, s10p/presented)
+        )
+        :modality(
+            pos(s10p/Runan_Wang, s12s/was_outstanding),
+            pos(s10p/Runan_Wang, s12d/defeating)
+        )
+    )
+    :SNT(snt13
+    Fengzhu Xu has won many championships in international competitions before .
+        :coref(
+            same(s13p2/Fengzhu_Xu, s12p5/Fungzhu_Xu)
+        )
+        :temporal(
+            before(s13w/has_won, dct)
+        )
+        :modality(
+            # not sure who's speaking here, but most likely it's the author now.
+            pos(aut, s13w/has_won)
+        )
+    )
+    :SNT(snt14
+    He had achieved complete victory in nine games with Chinese Go players before .
+        :coref(
+            same(s14h/he, s13p2/Fengzhu_Xu)
+        )
+        :temporal(
+            before(s14w/had_achieved, dct)
+        )
+        :modality(
+            pos(aut, s14w/had_achieved)
+        )
+    )
+    :SNT(snt15
+    The Go teams from China and Korea will shift to Seoul on September 1st , and will hold the second competition in the Le Tian Hotel on the 2nd .
+        :coref()
+        :temporal(
+            after(s15s2/will_shift, dct),
+
+            overlap(s15c/competition, s15s2/will_shift) # no variable in amr for `will_hold`, which also brings up the question of whether to account for noun events
+        )
+        :modality(
+            pos(aut, s15s2/will_shift),
+            pos(aut, s15c/competition)
+        )
+    )
+    :SNT(snt16
+    According to the rules discussed and agreed upon by both sides , if the two teams draw with 7 : 7 , then the final result will be determined by the result of the competition between Weiping Nie of the Chinese team and Xunxuan Cao of the Korean team .
+        :coref(
+            same(s16p3/Weiping_Nie, s5p6/Weiping_Nie),
+            same(s16p4/Xunxuan_Cao, s8p2/Xunxuan_Cao)
+        )
+        :temporal(
+            before(s16d/discussed, dct),
+            before(s16a/agreed, dct),
+            # hypothetical situation follows
+            after(s16d2/determined, s16d3/draw) # note that s16d2 has no parent node: TODO(?)
+        )
+        :modality(
+            pos(aut, s16d/discussed),
+            pos(aut, s16a/agreed),
+            # hypothetical verbs
+            neut(aut, s16d3/draw)
+            neut(aut, s16d2/determined)
+        )
+    )
+    :SNT(snt17
+    The prize money of the competition this time is 100,000 US dollars , the team that wins will get 70,000 US dollars , while the team that loses will get 30,000 US dollars .
+        :coref()
+        :temporal(
+            overlap(s17m4/is_100000_us_dollars, dct),
+            # winning and losing are hypothetical events
+            after(s17g, s17w/wins),
+            after(s17g2, s17l/loses)
+        )
+        :modality(
+            pos(aut, s17m4/is_100000_us_dollars),
+            # winning and losing, despite being hypothetical events, will surely happen..
+            neut(aut, s17w/wins) # ???
+            neut(aut, s17g/will_get)
+            neut(aut, s17l/loses)
+            neut(aut, s17g2/will_get)
+
+        )
+    )
+)
