@@ -8,3 +8,6 @@ Jayeol Chun
 1.  `{filename}.sst`
     * more or less complete stand-alone super-structure annotations
     * can be read by [demo](demo.py) script
+    
+## Discussion
+* [wiki](https://github.com/umr4nlp/sst_demo/wiki/Discussion)
