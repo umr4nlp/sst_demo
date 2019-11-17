@@ -324,7 +324,10 @@
                         :unit (d2 / dollar
                               :mod c4)))))
 
-* for temporal triples, assume tentatively that the current-sentence-vars is prioritized into ARG1, meaning out-of-sentence vars will likely be placed in ARG2
+Nov 10
+* Updated Nov 17
+
+Appears to be a direct translation of Chinese news article
 
 (ROOT
     :DCT dct
@@ -333,163 +336,165 @@
     The first " Le Tian Cup " China and Korea Go competition started today at Fushan , the second largest city of Korea .
         :coref()
         :temporal(
-            # aspectual_link(competition, started) # TimeBANk TODO(1)
-            before(s1s/started, dct)
+            # aspectual_link(s1c6/compete-01, s1s/start-01) # TODO (Nov 11): TimeBank
+            before(s1s/start-01, dct)
         )
         :modality(
-            pos(aut, s1s/started)
+            pos(s1s/start-01, aut)
         )
     )
     :SNT(snt2
     In the first round of competition , the Chinese team defeated the relatively stronger Korean team with a score of 4 : 3 .
         :coref()
         :temporal(
-            after(s2d/defeated, s1s/started)
+            after(s2d/defeat-01, s1s/start-01)
         )
         :modality(
-            pos(aut, s2d/defeated) # TODO(2): consistency with temp
+            pos(s2d/defeat-01, aut)
         )
     )
     :SNT(snt3
     In the competition today , both sides each have 7 Go players participating .
         :coref()
         :temporal(
-            overlap(s3h/have, dct),
-            overlap(s3h/have, # doesn't have `participating` as a node)
+            overlap(s3h/have-03, dct)
+            # overlap(???, s3h/have-03) # doesn't have `participating` as a node in AMR, possibly an error
         )
         :modality(
-            pos(aut, s3h/have)
+            pos(s3h/have-03, aut)
         )
     )
     :SNT(snt4
     Weiping Nie ( 9th level ) , Xiaoguang Liu ( 9th level ) , Hao Chang ( 6th level ) and Dayuan Cao ( 9th level ) from the Chinese team defeated Guibing Cui ( 6th level ) , Xiuying Zhang ( 9th level ) , Fengzhu Xu ( 9th level ) and Xuange Lin ( 8th level ) from the Korean team respectively .
         :coref()
         :temporal(
-            before(s4d/defeated, s2d/defeated), # TODO (Quant)
-            before(s4d3/defeated, s2d/defeated),
-            before(s4d4/defeated, s2d/defeated),
-            before(s4d2/defeated, s2d/defeated),
+            # TODO (Nov 11): Qunatification
+            before(s4d/defeat-01, s2d/defeat-01)
+            before(s4d3/defeat-01, s2d/defeat-01)
+            before(s4d4/defeat-01, s2d/defeat-01)
+            before(s4d2/defeat-01, s2d/defeat-01)
         )
         :modality(
-            pos(aut, s4d/defeated),
-            pos(aut, s4d3/defeated),
-            pos(aut, s4d4/defeated),
-            pos(aut, s4d2/defeated)
+            pos(s4d/defeat-01, aut)
+            pos(s4d3/defeat-01, aut)
+            pos(s4d4/defeat-01, aut)
+            pos(s4d2/defeat-01, aut)
         )
     )
     :SNT(snt5
     Among which , Weiping Nie , Xiaoguang Liu and Hao Chang both achieved victories in the middle games .
         :coref(
-            same(s5p4/Liu_Xiaoguang, s4p10/Liu_Xiaoguang),
-            same(s5p5/Chang_Hao, s4p11/Chang_Hao),
+            same(s5p4/Liu_Xiaoguang, s4p10/Liu_Xiaoguang)
+            same(s5p5/Chang_Hao, s4p11/Chang_Hao)
             same(s5p6/Nie_Weiping, s4p9/Nie_Weiping)
         )
         :temporal(
-            overlap(s5w/achieved_victories, s4d/defeated), # ???
-            overlap(s5w/achieved_victories, s4d3/defeated), # ???
-            overlap(s5w/achieved_victories, s4d4/defeated) # ???
+            # TODO (Nov 11): Quantification
+            overlap(s5w/win-01, s4d/defeat-01) # ???
+            overlap(s5w/win-01, s4d3/defeat-01) # ???
+            overlap(s5w/win-01, s4d4/defeat-01) # ???
         )
         :modality(
-            pos(aut, s5w/achieved)
+            pos(s5w/win-01, aut)
         )
     )
     :SNT(snt6
     Dayuan Cao achieved victory with an advantage of seven and a half ' mu ' .
         :coref(
-            :same(s6p2/Cao_Dayuan, s4p12/Cao_Dayuan)
+            same(s6p2/Cao_Dayuan, s4p12/Cao_Dayuan)
         )
         :temporal(
-            overlap(s6w/achieved, s4d2/defeated)
+            overlap(s6w/win-01, s4d2/defeat-01)
         )
         :modality(
-            pos(aut, s6w/achieved)
+            pos(s6w/win-01, aut)
         )
     )
     :SNT(snt7
     Xunxuan Cao ( 9th level ) , Changhao Li ( 7th level ) and Changhe Liu ( 6th level ) from the Korean team defeated Jing Liu ( 5th level ) , Xiaocun Ma ( 9th level ) and Jianhong Wang ( 7th level ) from the Chinese team respectively .
         :coref()
         :temporal(
-            before(s7d2/defeated, s2d/defeated),
-            before(s7d3/defeated, s2d/defeated),
-            before(s7d/defeated, s2d/defeated)
+            before(s7d2/defeat-01, s2d/defeat-01)
+            before(s7d3/defeat-01, s2d/defeat-01)
+            before(s7d/defeat-01, s2d/defeat-01)
         )
         :modality(
-            pos(aut, s7d2/defeated),
-            pos(aut, s7d3/defeated),
-            pos(aut, s7d/defeated)
+            pos(s7d2/defeat-01, aut)
+            pos(s7d3/defeat-01, aut)
+            pos(s7d/defeat-01, aut)
         )
     )
     :SNT(snt8
     Among which , Xunxuan Cao achieved a victory in the middle game .
         :coref(
-            :same(s8p2/Xunxuan_Cao, s7p7/Xunxuan_Cao)
+            same(s8p2/Xunxuan_Cao, s7p7/Xunxuan_Cao)
         )
         :temporal(
-            overlap(s8w/achieved, s7d2/defeated)
+            overlap(s8w/win-01, s7d2/defeat-01)
         )
         :modality(
-            pos(aut, s8w/achieved)
+            pos(s8w/win-01, aut)
         )
     )
     :SNT(snt9
     Changhao Li and Changhe Liu achieved victories with advantages of six and a half ' mu ' and seven and a half ' mu ' respectively .
         :coref(
-            same(s9p3/Changhao_Li, s7p8/Changhao_Li),
+            same(s9p3/Changhao_Li, s7p8/Changhao_Li)
             same(s9p4/Change_Liu, s7p9/Changhe_Liu)
         )
         :temporal(
-            overlap(s9w/achieved, s7d3/defeated),
-            overlap(s9w2/achieved, s7d/defeated)
+            overlap(s9w/win-01, s7d3/defeat-01)
+            overlap(s9w2/win-01, s7d/defeat-01)
         )
         :modality(
-            pos(aut, s9w/achieved),
-            pos(aut, s9w2, achieved)
+            pos(s9w/win-01, aut)
+            pos(s9w2/win-01, aut)
         )
     )
     :SNT(snt10
     When receiving reporters telephone interviews , Runan Wang , leader of the Chinese delegation presented that , overall speaking , the strength of the Korean team was stronger than the Chinese team .
         :coref()
         :temporal(
-
-            before(s10r2/receiving, s10p/presented),
-            before(s10p/presented, dct) or after(s10p/presented, s2d/defeated), # latter seems correct
-            overlap(s10h/was_stronger_have_degree_91, s10p/presented)
+            before(s10r2/receive-01, s10p/present-01)
+            before(s10p/present-01, dct) or after(s10p/presented, s2d/defeated) # latter seems correct
+            overlap(s10h/have-degree-91, s10p/present-01)
         )
         :modality(
-            pos(aut, s10r2/receiving),
-            pos(aut, s10p/presented),
-
-            pos(aut, s10p/Runan_Wang),
-            pos(s10p/Runan_Wang, s10h/was_stronger)
+            pos(s10r2/receive-01, aut)
+            pos(s10p/present-01, aut)
+            pos(s10p/Runan_Wang, aut)
+            pos(s10h/have-degree-91, s10p/Runan_Wang)
         )
     )
     :SNT(snt11
     However , the Chinese team performed better today , and therefore achieved victory .
         :coref()
         :temporal(
-            before(s11p/performed, s10p/presented),
-            after(s11w/achieved_victory, s11p/performed)
+            before(s11p/perform-01, s10p/present-01)
+            after(s11w/win-01, s11p/perform-01)
         )
         :modality(
-            pos(aut, s10p/Runan_Wang), # unnecessary, since I already defined this triple in snt10
-            pos(s10p/Runan_Wang, s11p/performed),
-            pos(s10p/Runan_Wang, s11w/achieved_victory)
+            # TODO (Nov 11): unnecessary? since already defined in snt10
+            pos(s10p/Runan_Wang, aut)
+
+            pos(s11p/perform-01, s10p/Runan_Wang)
+            pos(s11w/win-01, s10p/Runan_Wang)
         )
     )
     :SNT(snt12
     The performance of our young competitor , Hao Chang , was especially outstanding today , defeating Fengzhu Xu of the Korean team in the middle game .
         :coref(
-            same(s12p3/Hao_Chang, s5p5/Hao_Chang),
+            same(s12p3/Hao_Chang, s5p5/Hao_Chang)
             same(s12p5/Fungzhu_Xu, s4p15/Fungzhu_Xu)
         )
         :temporal(
-            before(s12s/was_outstanding, s10p/presented),
-            # after(s12d/defeating, s12s/was_outstanding) # TODO: no states as ref
-            after(s12d/defeating, s10p/presented)
+            before(s12s/stand-out-06, s10p/present-01)
+            # after(s12d/defeat-01, s12s/stand-out-06) # TODO (Nov 11): no states as ref
+            after(s12d/defeat-01, s10p/present-01)
         )
         :modality(
-            pos(s10p/Runan_Wang, s12s/was_outstanding),
-            pos(s10p/Runan_Wang, s12d/defeating)
+            pos(s12s/stand-out-06, s10p/Runan_Wang)
+            pos(s12d/defeat-01, s10p/Runan_Wang)
         )
     )
     :SNT(snt13
@@ -498,11 +503,11 @@
             same(s13p2/Fengzhu_Xu, s12p5/Fungzhu_Xu)
         )
         :temporal(
-            before(s13w/has_won, dct)
+            before(s13w/win-01, dct)
         )
         :modality(
             # not sure who's speaking here, but most likely it's the author now.
-            pos(aut, s13w/has_won)
+            pos(s13w/win-01, aut)
         )
     )
     :SNT(snt14
@@ -511,62 +516,61 @@
             same(s14h/he, s13p2/Fengzhu_Xu)
         )
         :temporal(
-            before(s14w/had_achieved, dct)
+            before(s14w/win-01, dct)
         )
         :modality(
-            pos(aut, s14w/had_achieved)
+            pos(aut, s14w/win-01)
         )
     )
     :SNT(snt15
     The Go teams from China and Korea will shift to Seoul on September 1st , and will hold the second competition in the Le Tian Hotel on the 2nd .
         :coref()
         :temporal(
-            after(s15s2/will_shift, dct),
-
-            overlap(s15c/competition, s15s2/will_shift) # no variable in amr for `will_hold`, which also brings up the question of whether to account for noun events
+            after(s15s2/shift-01, dct)
+            overlap(s15c/compete-01, s15s2/shift-01) # TODO (Nov 11): no variable in amr for `will_hold`, which also brings up the question of whether to account for noun events
         )
         :modality(
-            pos(aut, s15s2/will_shift),
-            pos(aut, s15c/competition)
+            pos(s15s2/shift-01, aut)
+            pos(s15c/compete-01, aut)
         )
     )
     :SNT(snt16
     According to the rules discussed and agreed upon by both sides , if the two teams draw with 7 : 7 , then the final result will be determined by the result of the competition between Weiping Nie of the Chinese team and Xunxuan Cao of the Korean team .
         :coref(
-            same(s16p3/Weiping_Nie, s5p6/Weiping_Nie),
+            same(s16p3/Weiping_Nie, s5p6/Weiping_Nie)
             same(s16p4/Xunxuan_Cao, s8p2/Xunxuan_Cao)
         )
         :temporal(
-            before(s16d/discussed, dct),
-            before(s16a/agreed, dct),
+            before(s16d/discuss-01, dct)
+            before(s16a/agree-01, dct)
             # hypothetical situation follows
-            after(s16d2/determined, s16d3/draw) # note that s16d2 has no parent node: TODO(?)
+            # TODO (Nov 11): note that s16d2 has no parent node: how to handle this case?
+            after(s16d2/determine-01, s16d3/draw-02)
         )
         :modality(
-            pos(aut, s16d/discussed),
-            pos(aut, s16a/agreed),
+            pos(s16d/discuss-01, aut)
+            pos(s16a/agree-01, aut)
             # hypothetical verbs
-            neut(aut, s16d3/draw)
-            neut(aut, s16d2/determined)
+            neut(s16d3/draw-02, aut)
+            neut(s16d2/determine-01, aut)
         )
     )
     :SNT(snt17
     The prize money of the competition this time is 100,000 US dollars , the team that wins will get 70,000 US dollars , while the team that loses will get 30,000 US dollars .
         :coref()
         :temporal(
-            overlap(s17m4/is_100000_us_dollars, dct),
+            overlap(s17m4/monetary-quantity, dct)
             # winning and losing are hypothetical events
-            after(s17g, s17w/wins),
-            after(s17g2, s17l/loses)
+            after(s17g/get-01, s17w/win-01)
+            after(s17g2/get-01, s17l/lose-03)
         )
         :modality(
-            pos(aut, s17m4/is_100000_us_dollars),
-            # winning and losing, despite being hypothetical events, will surely happen..
-            neut(aut, s17w/wins) # ???
-            neut(aut, s17g/will_get)
-            neut(aut, s17l/loses)
-            neut(aut, s17g2/will_get)
-
+            pos(s17m4/monetary-quantity, aut)
+            # winning and losing, despite being hypothetical events, will surely happen..?
+            neut(s17w/win-01, aut) # ???
+            neut(s17g/get-01, aut)
+            neut(s17l/lose-03, aut)
+            neut(s17g2/get-01, aut)
         )
     )
 )
