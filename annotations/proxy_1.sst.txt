@@ -240,7 +240,7 @@
     )
     :SNT(snt7
         :coref(
-            same(s7p3/us_officials, s5p3/us_officials),
+            same(s7p3/us_officials, s5p3/us_officials), # PLURAL
             same(s7p4/european_officials, s5p5/european_officials),
             same(s7c5/Iran, s4c/Iran) # no link to Tehran
             # no link to `Iran's nuclear programs` which shows up repeatedly
@@ -265,6 +265,7 @@
             same(s8o2/IAEA, s4o/The_International_Atomic_Energy_Agency)
         )
         :temporal(
+        # TODO DCT not conclusive
             # before(s8d/distributed, s8m/meeting) # captured within amr
             before(s8d/distributed, dct)
         )

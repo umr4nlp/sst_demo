@@ -1,0 +1,145 @@
+# ::id DF-199-194215-653_0484.1 ::SNT1
+# ::snt I am 24 and a mother of a 2 and a half year old.
+(a / and
+      :op1 (a2 / age-01
+            :ARG1 (i / i)
+            :ARG2 (t / temporal-quantity :quant 24
+                  :unit (y2 / year)))
+      :op2 (h / have-rel-role-91
+            :ARG0 i
+            :ARG1 (p / person
+                  :age (t3 / temporal-quantity :quant 2.5
+                              :unit (y / year)))
+            :ARG2 (m / mother)))
+
+# ::id DF-199-194215-653_0484.2 ::SNT2
+# ::snt Me and my son's father have been broken up since August.
+(b / break-up-08
+      :ARG1 (i / i)
+      :ARG3 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 i
+                              :ARG2 (s3 / son)))
+                  :ARG2 (f / father)))
+      :time (s2 / since
+            :op1 (d / date-entity :month 8)))
+
+# ::id DF-199-194215-653_0484.3 ::SNT3
+# ::snt I want to start dating other people and my son's father says if I do he will have nothing to do with his son.
+(a / and
+      :op1 (w / want-01
+            :ARG0 (i / i)
+            :ARG1 (s2 / start-01
+                  :ARG0 i
+                  :ARG1 (d / date-02
+                        :ARG0 i
+                        :ARG1 (p / person
+                              :mod (o / other)))))
+      :op2 (s / say-01
+            :ARG0 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 (p3 / person
+                              :ARG0-of (h2 / have-rel-role-91
+                                    :ARG1 i
+                                    :ARG2 (s3 / son)))
+                        :ARG2 (f / father)))
+            :ARG1 (h3 / have-to-do-with-04
+                  :ARG0 p2
+                  :ARG1 p3
+                  :ARG2 (n / nothing)
+                  :condition d)))
+
+# ::id DF-199-194215-653_0484.4 ::SNT4
+# ::snt He is very possesive and controlling but he has no right to be as we are not together.
+(c / contrast-01
+      :ARG1 (a / and
+            :op1 (p / possessive-03
+                  :ARG0 (h2 / he)
+                  :degree (v2 / very))
+            :op2 (c3 / control-01
+                  :ARG0 h2
+                  :degree (v / very)))
+      :ARG2 (r / right-05 :polarity -
+            :ARG1 h2
+            :ARG2 a
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (t / together
+                        :domain (w / we)))))
+
+## SUPER STRUCTURE
+
+(ROOT
+    :DCT dct
+    :aut aut
+    :SNT(snt1
+    I am 24 and a mother of a 2 and a half year old.
+        :coref(
+            same(s1i, aut)
+        )
+        :temporal(
+            # states
+            overlap(s1a2/age-01, dct)
+            overlap(s2h/have-rel-role-91, dct)
+        )
+        :modality(
+            pos(s1a2/age-01, aut)
+            pos(s2h/have-rel-role-91, aut)
+        )
+    )
+    :SNT(snt2
+    Me and my son's father have been broken up since August.
+        :coref(
+            same(s2i/me), s1i) # I
+            same(s2p2/my_son, s1p/two_and_a_half_year_old) # my son
+        )
+        :temporal(
+            overlap(s2b/break-up-08, dct)
+        )
+        :modality(
+            pos(s2b/break-up-08, aut)
+        )
+    )
+    :SNT(snt3
+    I want to start dating other people and my son's father says if I do he will have nothing to do with his son.
+        :coref(
+            same(s3i, s2i) # I
+            same(s3p2/my_son's_father, s2p/my_son's_father)
+            same(s3p3/my_son, s2p2/my_son) # my son
+        )
+        :temporal(
+            overlap(s3w/want-01, dct)
+            ASPECTUAL(start date)
+            # dating?
+            overlap(s3s/say-01, dct)
+            after(s3h3/have-to-do-with-04, s3d/date-02) # hypothetical
+        )
+        :modality(
+            pos(s3w/want-01, aut)
+            pos(s3s/say-01, aut)
+            pos(s3p2/my_son's_father, aut) # between sources
+            neut(s3d/date-02, s3p2)
+            neutNeg(s3h3/have-to-do-with-04, s3p2)
+        )
+    )
+    :SNT(snt4
+    He is very possesive and controlling but he has no right to be as we are not together.
+        :coref(
+            same(s4h2/he, s3p2/my_son's_father)
+            # membership
+            member(s4h2/he, s4w/we)
+            member(aut, s4w/we)
+        )
+        :temporal(
+            overlap(s4p/possessive-03, dct)
+            overlap(s4c3/control-01, dct)
+            overlap(s4r/right-05, dct)
+        )
+        :modality(
+            pos(s4p/possessive-03, aut)
+            pos(s4c3/control-01, aut)
+            neg(s4r/right-05, aut)
+        )
+    )
+)
