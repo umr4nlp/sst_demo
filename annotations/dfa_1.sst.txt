@@ -68,7 +68,187 @@
                   :ARG0 (t / together
                         :domain (w / we)))))
 
+# ::id DF-199-194215-653_0484.5
+# ::snt He has too much going on in his life right now and he thinks we can work when I have told him several times I dont love him and he does not love me.
+(a / and
+      :op1 (g / go-on-15
+            :location (l / life
+                  :poss (h2 / he))
+            :time (n / now
+                  :mod (r / right))
+            :ARG1-of (h / have-quant-91
+                  :ARG2 (m / much)
+                  :ARG3 (t2 / too)))
+      :op2 (t / think-01
+            :ARG0 h2
+            :ARG1 (p / possible-01
+                  :ARG1 (w / work-09
+                        :ARG1 (w2 / we)))
+            :concession (t3 / tell-01
+                  :ARG0 (i / i)
+                  :ARG1 (a2 / and
+                        :op1 (l2 / love-01 :polarity -
+                              :ARG0 i
+                              :ARG1 h2)
+                        :op2 (l3 / love-01 :polarity -
+                              :ARG0 h2
+                              :ARG1 i))
+                  :ARG2 h2
+                  :frequency (s2 / several))))
+
+# ::id DF-199-194215-653_0484.6
+# ::snt I want him to be there for his son without needing me too.
+(w / want-01
+      :ARG0 (i / i)
+      :ARG1 (h / he
+            :location (t / there
+                  :beneficiary (p / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 h
+                              :ARG2 (s / son)))))
+      :manner (n / need-01 :polarity -
+            :ARG0 h
+            :ARG1 i
+            :mod (t2 / too)))
+
+# ::id DF-199-194215-653_0484.7
+# ::snt But he has no one his family and him dont get along and have their own issues.
+(m / multi-sentence
+      :snt1 (c / contrast-01
+            :ARG2 (h / have-03
+                  :ARG0 (h2 / he)
+                  :ARG1 (n / no-one)))
+      :snt2 (a / and
+            :op1 (g / get-along-18 :polarity -
+                  :ARG1 (f / family
+                        :ARG1-of (h5 / have-org-role-91
+                              :ARG0 h3
+                              :ARG2 (m2 / member)))
+                  :ARG2 (h3 / he))
+            :op2 (h4 / have-03
+                  :ARG0 (a3 / and
+                        :op1 h3
+                        :op2 f)
+                  :ARG1 (i / issue-02
+                        :ARG1 a3))))
+
+# ::id DF-199-194215-653_0484.8
+# ::snt I don't want to be miserable anymore and the longer he is around the more miserable I will be.
+      :op1 (w / want-01 :polarity -
+            :ARG0 (i / i)
+            :ARG1 (m / miserable
+                  :domain i)
+            :time (a / anymore))
+      :op2 (c / correlate-91
+            :ARG1 (m3 / more
+                  :ARG3-of (h2 / have-degree-91
+                        :ARG1 (b2 / be-located-at-91
+                              :ARG1 (h / he)
+                              :ARG2 (a2 / around))
+                        :ARG2 (l / long-03
+                              :ARG1 b2)))
+            :ARG2 (m4 / more
+                  :ARG3-of (h3 / have-degree-91
+                        :ARG1 i
+                        :ARG2 (m2 / miserable)))))
+
+# ::id DF-199-194215-653_0484.9
+# ::snt I dont want him to not be there for his son as he is a good father or he at least tries.
+(w / want-01 :polarity -
+      :ARG0 (i / i)
+      :ARG1 (h / he
+            :location (t / there :polarity -
+                  :beneficiary (p / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 h
+                              :ARG2 (s / son)))))
+      :ARG1-of (c / cause-01
+            :ARG0 (o / or
+                  :op1 (h3 / have-rel-role-91
+                        :ARG0 h
+                        :ARG2 (f / father
+                              :ARG1-of (g / good-02)))
+                  :op2 (t2 / try-01
+                        :ARG0 h
+                        :ARG1 h3
+                        :manner (a / at-least)))))
+
+# ::id DF-199-194215-653_0484.10
+# ::snt I do believe every child needs both parents weather they are together or not.
+(b / believe-01
+      :ARG0 (i / i)
+      :ARG1 (n / need-01
+            :ARG0 (c / child
+                  :mod (e / every))
+            :ARG1 (p / person
+                  :mod (b2 / both)
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 c
+                        :ARG2 (p2 / parent)))
+            :concession (o / or
+                  :op1 (t / together
+                        :domain p)
+                  :op2 (t2 / together :polarity -
+                        :domain p))))
+
+# ::id DF-199-194215-653_0484.11
+# ::snt But he thinks if he cant have me no one can.
+(c / contrast-01
+      :ARG2 (t / think-01
+            :ARG0 (h / he)
+            :ARG1 (p / possible-01
+                  :ARG1 (h2 / have-03
+                        :ARG0 (n / no-one)
+                        :ARG1 (i / i))
+                  :condition (p2 / possible-01 :polarity -
+                        :ARG1 (h3 / have-03
+                              :ARG0 h
+                              :ARG1 i)))))
+
+# ::id DF-199-194215-653_0484.12
+# ::snt What do I do to move on with my life.
+(d / do-02
+      :ARG0 (i / i)
+      :ARG1 (a / amr-unknown)
+      :ARG2-of (m / move-01
+            :ARG0 i
+            :topic (l / life
+                  :poss i)))
+
+# ::id DF-199-194215-653_0484.13
+# ::snt Your ex is threatening you using your son... bad, bad, bad.
+(b / bad-07
+      :ARG1 (t / threaten-01
+            :ARG0 (p / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 y
+                        :ARG2 (s2 / significant-other)
+                        :time (e / ex)))
+            :ARG2 (y / you)
+            :ARG2-of (u / use-01
+                  :ARG0 p
+                  :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 y
+                              :ARG2 (s / son)))))
+      :degree (v / very))
+
+# ::id DF-199-194215-653_0484.14
+# ::snt You can't give in to that or it will just escalate.
+(o3 / obligate-01
+      :ARG1 (g2 / give-in-09 :polarity -
+            :ARG0 (y / you)
+            :ARG1 (t / that))
+      :ARG1-of (c2 / cause-01
+            :ARG0 (e / escalate-01
+                  :ARG1 (i / it)
+                  :mod (j / just)
+                  :condition (g3 / give-in-09
+                        :ARG0 y
+                        :ARG1 t))))
+
 ## SUPER STRUCTURE
+Dec 1
 
 (ROOT
     :DCT dct
@@ -142,4 +322,170 @@
             neg(s4r/right-05, aut)
         )
     )
+    :SNT(snt5
+    He has too much going on in his life right now and he thinks we can work when I have told him several times I dont love him and he does not love me.
+        :coref(
+            same(s5h2/he, s4h2/he)
+            same(s5i/I, s3i/I)
+            member(s5i/I, s5w2/we)
+            member(s5h2/he, s5w2/we)
+        )
+        :temporal(
+            overlap(s5g/go-on-15, dct)
+            overlap(s5t/think-01, dct)
+            overlap(s5p/possible-01, s5t/think-01)
+            ?(s5w/work-09, s5p/possible-01)
+            before(s5t3/tell-01, ?)
+            # negative events?
+        )
+        :modality(
+            pos(s5g/go-on-15, aut)
+            pos(s5t/think-01, aut)
+            pos(s5h2/he, aut)
+            posPrt(s5w/work-09, s5h2/he)
+            pos(s5t3/tell-01, aut)
+            neg(s5l2/love-01, aut)
+            neg(s5l3/love-01, aut)
+        )
+    )
+    :SNT(snt6
+    I want him to be there for his son without needing me too.
+        :coref(
+            same(s6i/I, s5i/I)
+            same(s6h/he, s5h2/he)
+            same(s6p/person, s3p3/my_son)
+        )
+        :temporal(
+            overlap(s6w/want-01, dct)
+        )
+        :modality(
+            pos(s6w/want-01, aut)
+            ???neg(s6n/need-01, aut)
+        )
+    )
+    :SNT(snt7 # ungrammatical
+    But he has no one his family and him dont get along and have their own issues.
+        :coref(
+            same(s7h2/he, s6h/he)
+        )
+        :temporal(
+            overlap(s7h/have-03, dct)
+            # negative events?
+            overlap(s7h4/have-03, dct)
+        )
+        :modality(
+            pos(s7h/have-03, aut)
+            neg(s7g/get-along-18, aut)
+            pos(s7h4/have-03, dct)
+        )
+    )
+    :SNT(snt8
+    I don't want to be miserable anymore and the longer he is around the more miserable I will be.
+        :coref(
+            same(s8i/I, s6i/I)
+            same(s8h/he, s7h2/he)
+        )
+        :temporal(
+            # ???
+            after(s8h3/have-degree-91, s8b2/be-located-at-91)
+        )
+        :modality(
+            neg(s8w/want-01, aut)
+            ???(s8m/miserable, aut)
+            ???(s8b2/be-located-at-91, aut)
+            ???(s8h3/have-degree-91, aut)
+        )
+    )
+    :SNT(snt9
+    I dont want him to not be there for his son as he is a good father or he at least tries.
+        :coref(
+            same(s9i/I, s8i/I)
+            same(s9h/he, s8h/he)
+            same(s9s/son, s6p/person)
+        )
+        :temporal(
+            ???
+            ??? overlap(s9h3/have-rel-role-91, dct)
+            ??? overlap(s9t2/try-01, dct)
+        )
+        :modality(
+            neg(s9w/want-01, aut)
+            pos(s9h3/have-rel-role-91, aut)
+            pos(s9t2/try-01, aut)
+        )
+    )
+    :SNT(snt10
+    I do believe every child needs both parents weather they are together or not.
+        :coref(
+            same(s10i/I, s9i/I)
+        )
+        :temporal(
+            overlap(s10b/believe-01, aut)
+            ??? needs
+        )
+        :modality(
+            pos(s10b/believe-01, aut)
+            pos(s10n/need-01, aut)
+            ??? posPrt(
+        )
+    )
+    :SNT(snt11
+    But he thinks if he cant have me no one can.
+        :coref(
+            same(s11h/he, s9h/he)
+            same(s11i/I, s10i/I)
+        )
+        :temporal(
+            overlap(s11t/think-01, dct)
+            after(s11h3/have-03, s11h2/have-03)
+        )
+        :modality(
+            pos(s11t/think-01, aut)
+            neutNeg(s11h2/have-03, aut)
+            neutNeg(s11h3/have-03, aut)
+        )
+    )
+    :SNT(snt12 # has amr-unknown?
+    What do I do to move on with my life.
+        :coref(
+            same(s12/i, s11i/i)
+        )
+        :temporal(
+            overlap(s12d/do-02, dct)
+            aspectual???(s12m/move-01, dct)
+        )
+        :modality(
+            ??? modality in a question
+        )
+    )
+    :SNT(snt13 # ends up being an interview
+    Your ex is threatening you using your son... bad, bad, bad.
+        :coref(
+            same(s13y/you, s12i/I)
+            same(s13p/person, s11h/he)
+        )
+        :temporal(
+            overlap(s13t/threaten-01, dct)
+            overlap(s13b/bad-07, dct)
+        )
+        :modality(
+            pos(s13t/threaten-01, aut)
+            pos(s13u/use-01, aut)
+        )
+    )
+    :SNT(snt14
+    You can't give in to that or it will just escalate.
+        :coref(
+            same(s14y/you, s13y/you)
+        )
+        :temporal(
+            after(s14e/escalate-01, dct) ??? could be hypothetical
+        )
+        :modality(
+            # cant' give-in
+            # neutNeg(s14g2/give-in-09, aut) # o3 / obligate-01 ???
+            pos(s14e/escalate-01, aut) # c2 / cause-01 ???
+        )
+    )
 )
+
