@@ -1,0 +1,279 @@
+### SuperStructure as Triples, with more AMR-friendly representation, extending multiple documents
+Dec 8
+
+as long as `triple` is used to represent relations, hard to completely conform to AMR format without adding great redundancy
+* `triple` should be considered a single structural unit, just like a variable or a constant. How to distinguish them then?
+
+# ::id DF-199-194215-653_0484.1
+# ::snt I am 24 and a mother of a 2 and a half year old.
+(a / and
+      :op1 (a2 / age-01
+            :ARG1 (i / i)
+            :ARG2 (t / temporal-quantity :quant 24
+                  :unit (y2 / year)))
+      :op2 (h / have-rel-role-91
+            :ARG0 i
+            :ARG1 (p / person
+                  :age (t3 / temporal-quantity :quant 2.5
+                              :unit (y / year)))
+            :ARG2 (m / mother)))
+
+# ::id DF-199-194215-653_0484.2
+# ::snt Me and my son's father have been broken up since August.
+(b / break-up-08
+      :ARG1 (i / i)
+      :ARG3 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 i
+                              :ARG2 (s3 / son)))
+                  :ARG2 (f / father)))
+      :time (s2 / since
+            :op1 (d / date-entity :month 8)))
+
+# ::id DF-199-194215-653_0484.3
+# ::snt I want to start dating other people and my son's father says if I do he will have nothing to do with his son.
+(a / and
+      :op1 (w / want-01
+            :ARG0 (i / i)
+            :ARG1 (s2 / start-01
+                  :ARG0 i
+                  :ARG1 (d / date-02
+                        :ARG0 i
+                        :ARG1 (p / person
+                              :mod (o / other)))))
+      :op2 (s / say-01
+            :ARG0 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 (p3 / person
+                              :ARG0-of (h2 / have-rel-role-91
+                                    :ARG1 i
+                                    :ARG2 (s3 / son)))
+                        :ARG2 (f / father)))
+            :ARG1 (h3 / have-to-do-with-04
+                  :ARG0 p2
+                  :ARG1 p3
+                  :ARG2 (n / nothing)
+                  :condition d)))
+
+# ::id DF-199-194215-653_0484.4
+# ::snt He is very possesive and controlling but he has no right to be as we are not together.
+(c / contrast-01
+      :ARG1 (a / and
+            :op1 (p / possessive-03
+                  :ARG0 (h2 / he)
+                  :degree (v2 / very))
+            :op2 (c3 / control-01
+                  :ARG0 h2
+                  :degree (v / very)))
+      :ARG2 (r / right-05 :polarity -
+            :ARG1 h2
+            :ARG2 a
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (t / together
+                        :domain (w / we)))))
+
+# ::id PROXY_LTW_ENG_20070831_0072.1
+# ::snt 2007-08-21
+(d / date-entity :year 2007 :month 8 :day 21)
+
+# ::id PROXY_LTW_ENG_20070831_0072.2
+# ::snt Iran (Islamic Republic of) (IR)
+(c / country :wiki "Iran"
+      :name (n / name :op1 "Islamic" :op2 "Republic" :op3 "of" :op4 "Iran"))
+
+# ::id PROXY_LTW_ENG_20070831_0072.3
+# ::snt International; weapons; politics; proliferation; energy
+(a / and
+      :op1 (i / international)
+      :op2 (w / weapon)
+      :op3 (p / politics)
+      :op4 (p2 / proliferate-01)
+      :op5 (e / energy))
+
+# ::id PROXY_LTW_ENG_20070831_0072.4
+# ::snt The International Atomic Energy Agency reached an agreement with Iranian officials that stated there were no remaining issues and ambiguities regarding Iran's nuclear program and activities.
+(r3 / reach-01
+      :ARG0 (o / organization :wiki "International_Atomic_Energy_Agency" :name (n / name :op1 "International" :op2 "Atomic" :op3 "Energy" :op4 "Agency"))
+      :ARG1 (a / agree-01
+            :ARG0 o
+            :ARG2 (p2 / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country :wiki "Iran" :name (n2 / name :op1 "Iran"))
+                        :ARG2 (o2 / official)))
+            :ARG0-of (s / state-01
+                  :ARG1 (a2 / and
+                        :op1 (i / issue-02 :polarity -
+                              :ARG1-of (r / remain-01))
+                        :op2 (a3 / ambiguity :polarity -
+                              :ARG1-of r)
+                        :ARG0-of (r2 / regard-01
+                              :ARG1 (a4 / and
+                                    :op1 (p / program
+                                          :mod (n3 / nucleus)
+                                          :poss c)
+                                    :op2 (a5 / activity-06
+                                          :ARG0 c
+                                          :mod n3)))))))
+
+
+### Multiple Document SuperStructure as Triples
+(r / ROOT
+    :DOC(d1 / document-root # from `dfa_1.sst.txt`
+        # like AMR, having to define a variable makes it ugly and interferes with
+        # `document-root` variable if we use `d2`. Then the second document will
+        # get `d3`.
+        :ID(i1 / DF-199-194215-653_0484)
+
+        # simple constant, no variable
+        :ID DF-199-194215-653_0484
+
+        :DCT(dct / document-creation-time)
+        :AUT(aut / document-author)
+        :SNT(s1 / sentence
+            :coref(
+                same(s1i, aut)
+            )
+            :temporal(
+                overlap(s1a2, dct)
+                overlap(s2h, dct)
+            )
+            :modality(
+                pos(s1a2, aut)
+                pos(s2h, aut)
+            )
+
+            ####################################################################
+
+            ### 1) `same` as an edge
+            :coref(t / triple
+                :same(c / chain
+                    :ARG0 s1i
+                    :ARG1 aut
+                )
+            )
+
+            ### 2) `same` as a node, BUT cannot handle multiple triples
+            :coref(same #
+                :ARG0 s1i
+                :ARG1 aut
+            )
+
+            ### 3) as a triple. Should be considered a list of Triples, but current annotation
+            ### doese not represent `list` in any explicit way.
+            :coref(
+                same(s1i, aut)
+            )
+
+            ### explicit list; is this necessary
+            :coref([
+                same(s1i, aut),
+                same(...),
+                member(...),
+                ...
+            ])
+
+            ####################################################################
+        )
+        :SNT(s2 / sentence
+            :coref(
+                same(s2), s1i)
+                same(s2p2, s1p)
+            )
+            :temporal(
+                overlap(s2b, dct)
+            )
+            :modality(
+                pos(s2b, aut)
+            )
+        )
+        :SNT(s3 / sentence
+            :coref(
+                same(s3i, s2i)
+                same(s3p2, s2p)
+                same(s3p3, s2p2)
+            )
+            :temporal(
+                overlap(s3w, dct)
+                overlap(s3s, dct)
+                after(s3h3, s3d)
+            )
+            :modality(
+                pos(s3w, aut)
+                pos(s3s, aut)
+                pos(s3p2, aut)
+                neut(s3d, s3p2)
+                neutNeg(s3h3, s3p2)
+            )
+        )
+        :SNT(s4 / sentence
+            :coref(
+                same(s4h2, s3p2)
+                member(s4h2, s4w)
+                member(aut, s4w)
+            )
+            :temporal(
+                overlap(s4p, dct)
+                overlap(s4c3, dct)
+                overlap(s4r, dct)
+            )
+            :modality(
+                pos(s4p, aut)
+                pos(s4c3, aut)
+                neg(s4r, aut)
+            )
+        )
+    )
+    :DOC(d2 / document-root # from `proxy_1.sst.txt`
+        :ID PROXY_LTW_ENG_20070831_0072
+
+        # because `dct` and `aut` already exist from `d1`, should go for `dct2` and `aut2?
+        # Not really necessary, since `d1` and `d2` are effectively in a different scope, although
+        # it is certainly not evident from the annotation itself..
+        # In that case, even the `sentence` vars cannot begin with `s1`, but `s5`. This doens't make sense
+        # and should be avoided.
+
+        :DCT(dct / document-creation-time)
+        :AUT(aut / document-author)
+        :SNT(s1 / sentence
+            :coref()
+            :temporal()
+            :modality()
+        )
+        :SNT(s2 / sentence
+            :coref()
+            :temporal()
+            :modality()
+        )
+        :SNT(s3 / sentence
+            :coref()
+            :temporal()
+            :modality()
+        )
+        :SNT(s4 / sentence
+            :coref(
+                same(s4c, s2c)
+            )
+            :temporal(
+                before(s4r3, dct),
+                overlap(s4a, s4r3)
+                overlap(s4s, s4a)
+                before(s4i, s4s)
+                before(s4a3, s4s)
+            )
+            :modality(
+                pos(s4r3, aut)
+                pos(s4a, aut)
+                pos(s4s, aut)
+                pos(s4o, aut)
+                pos(s4p2, aut)
+                neg(s4o, s4i)
+                neg(s4p2, s4i)
+                neg(s4o, s4a3)
+                neg(s4p2, s4a3)
+            )
+        )
+    )
+)
+
