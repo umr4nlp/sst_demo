@@ -334,8 +334,8 @@ Dec 1
             overlap(s5g/go-on-15, dct)
             overlap(s5t/think-01, dct)
             overlap(s5p/possible-01, s5t/think-01)
-            ?(s5w/work-09, s5p/possible-01)
-            before(s5t3/tell-01, ?)
+            ?(s5w/work-09, s5p/possible-01) # TODO : Modal
+            before(s5t3/tell-01, s5t/think-01)
             # negative events?
         )
         :modality(
@@ -360,7 +360,7 @@ Dec 1
         )
         :modality(
             pos(s6w/want-01, aut)
-            ???neg(s6n/need-01, aut)
+            neg(s6n/need-01, aut)
         )
     )
     :SNT(snt7 # ungrammatical
@@ -387,13 +387,14 @@ Dec 1
         )
         :temporal(
             # ???
-            after(s8h3/have-degree-91, s8b2/be-located-at-91)
+            overlap(s8h3/have-degree-91, s8b2/be-located-at-91)
         )
         :modality(
             neg(s8w/want-01, aut)
-            ???(s8m/miserable, aut)
-            ???(s8b2/be-located-at-91, aut)
-            ???(s8h3/have-degree-91, aut)
+            negPrt(s8m/miserable, aut)
+            pos(correlate, aut)
+            neut(s8b2/be-located-at-91, aut)
+            neut(s8h3/have-degree-91, aut)
         )
     )
     :SNT(snt9
@@ -404,12 +405,14 @@ Dec 1
             same(s9s/son, s6p/person)
         )
         :temporal(
-            ???
-            ??? overlap(s9h3/have-rel-role-91, dct)
-            ??? overlap(s9t2/try-01, dct)
+            overlap(s9h3/have-rel-role-91, dct)
+            overlap(s9t2/try-01, dct)
         )
         :modality(
             neg(s9w/want-01, aut)
+            ## TODO: Double Negative
+            negPrt(not_be_there, aut)
+
             pos(s9h3/have-rel-role-91, aut)
             pos(s9t2/try-01, aut)
         )
@@ -420,13 +423,15 @@ Dec 1
             same(s10i/I, s9i/I)
         )
         :temporal(
-            overlap(s10b/believe-01, aut)
-            ??? needs
+            overlap(s10b/believe-01, dct)
+            ??? needs as a state
+            # overlap(needs, dct)
         )
         :modality(
             pos(s10b/believe-01, aut)
             pos(s10n/need-01, aut)
             ??? posPrt(
+            neut(together, aut)
         )
     )
     :SNT(snt11
@@ -456,6 +461,7 @@ Dec 1
         )
         :modality(
             ??? modality in a question
+            neut
         )
     )
     :SNT(snt13 # ends up being an interview
@@ -482,8 +488,9 @@ Dec 1
             after(s14e/escalate-01, dct) ??? could be hypothetical
         )
         :modality(
-            # cant' give-in
-            # neutNeg(s14g2/give-in-09, aut) # o3 / obligate-01 ???
+            # TODO modal words?
+            neg(o3/obligate-01, aut)
+            neg(s14g2/give-in-09, aut) # o3 / obligate-01 ???
             pos(s14e/escalate-01, aut) # c2 / cause-01 ???
         )
     )
