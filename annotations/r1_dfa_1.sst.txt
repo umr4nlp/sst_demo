@@ -1,0 +1,482 @@
+# ::id sdl_0002.1
+# ::snt Rockström said that when rich countries increase their consumption , they also accelerate the exploitation of the world 's national resources , with the result that they emit more greenhouse gases .
+(s / say-01
+      :ARG0 (p / person :wiki "Johan_Rockström"
+            :name (n / name :op1 "Rockström"))
+      :ARG1 (a / accelerate-01
+            :ARG0 (c / country
+                  :mod (r / rich))
+            :ARG1 (e / exploit-01
+                  :ARG0 c
+                  :ARG1 (r2 / resource
+                        :mod (n2 / nation)
+                        :poss (w / world)))
+            :mod (a2 / also)
+            :time (i / increase-01
+                  :ARG0 c
+                  :ARG1 (c2 / consume-01
+                        :ARG0 c))
+            :ARG0-of (c3 / cause-01
+                  :ARG1 (e2 / emit-01
+                        :ARG0 c
+                        :ARG1 (g / gas
+                              :mod (g2 / greenhouse)
+                              :mod (m / more))))))
+
+# ::id sdl_0002.2
+# ::snt This will ultimately accelerate the speed of desertification in sub - Saharan African countries and other areas of the world .
+(a / accelerate-01
+      :ARG0 (t / this)
+      :ARG1 (s / speed-01
+            :ARG0 t
+            :ARG1 (d / desertification
+                  :location (a2 / and
+                        :op1 (c / country
+                              :location (w2 / world-region :wiki "Sub-Saharan_Africa"
+                                    :name (n / name :op1 "sub-Saharan" :op2 "Africa")))
+                        :op2 (a3 / area
+                              :part-of (w / world)
+                              :mod (o / other)))))
+      :time (u / ultimate))
+
+# ::id sdl_0002.3 ::date 2013-07-04T02:52:50 ::annotator SDL-AMR-09 ::preferred
+# ::snt The ice sheet has melted earlier this season .
+# ::save-date Mon Jul 8, 2013 ::file sdl_0002_3.txt
+(m / melt-01
+      :ARG1 (s / sheet
+            :consist-of (i / ice)
+            :mod (s2 / season
+                  :mod (t / this)))
+      :time (e / early
+            :degree (m2 / more)))
+
+# ::id sdl_0002.4
+# ::snt Consequently , experts have predicted that the world has at least ten years within which to lower the volume of greenhouse gas emissions before it is too late to redeem the situation .
+(c / cause-01
+      :ARG1 (p / predict-01
+            :ARG0 (p2 / person
+                  :ARG1-of (e / expert-01))
+            :ARG1 (h / have-03
+                  :ARG0 (w / world)
+                  :ARG1 (y / year
+                        :quant (a / at-least :op1 10)
+                        :purpose (l / lower-05
+                              :ARG0 w
+                              :ARG1 (v / volume
+                                    :mod (e2 / emit-01
+                                          :ARG0 w
+                                          :ARG1 (g / gas
+                                                :mod (g2 / greenhouse))))
+                              :time (b / before
+                                    :op1 (i / it
+                                          :mod (l2 / late
+                                                :degree (t / too)
+                                                :purpose (r / redeem-01
+                                                      :ARG1 (s / situation))))))))))
+
+# ::id sdl_0002.5
+# ::snt A jeweler 's shop in Tokyo displayed a swimsuit , dress and shawl to go with it made of pure gold thread today . These were made by a workshop in the ancient capital , Kyoto .
+(m / multi-sentence
+      :snt1 (d / display-01
+            :ARG0 (j / jeweler)
+            :ARG1 (a / and
+                  :op1 (s2 / swimsuit)
+                  :op2 (d2 / dress)
+                  :op3 (s3 / shawl
+                        :ARG1-of (g2 / go-22
+                              :ARG2 d2))
+                  :ARG1-of (m2 / make-01
+                        :ARG2 (t / thread
+                              :mod (g / gold
+                                    :ARG1-of (p / pure-02)))))
+            :ARG2 (s / shop
+                  :poss j
+                  :location (c / city :wiki "Tokyo" :name (n / name :op1 "Tokyo")))
+            :time (t2 / today))
+      :snt2 (m3 / make-01
+            :ARG0 (p2 / person
+                  :location (w / workshop
+                        :location (c2 / city :wiki "Kyoto" :name (n2 / name :op1 "Kyoto")
+                              :ARG0-of (h / have-org-role-91
+                                    :ARG2 (c3 / capital))
+                              :mod (a2 / ancient))))
+            :ARG1 (t3 / this)))
+
+# ::id sdl_0002.6
+# ::snt Tokyo 's Ginza Tanaka Jewelry Company said that the hand - woven gold dress weighs 1.1 kilograms , with a value of 30 million Japanese yen ( about 8.06 million NT dollars ) .
+(s / say-01
+      :ARG0 (c / company :wiki "Tanaka_Kikinzoku"
+            :name (n / name :op1 "Ginza" :op2 "Tanaka" :op3 "Jewelry" :op4 "Company")
+            :location (c3 / city :wiki "Tokyo"
+                  :name (n3 / name :op1 "Tokyo")))
+      :ARG1 (w / weigh-01
+            :ARG1 (d / dress
+                  :ARG1-of (w2 / weave-01
+                        :manner (h / hand))
+                  :ARG1-of (v / value-01
+                        :ARG2 (m2 / monetary-quantity :quant 30000000
+                              :unit (y / yen
+                                    :mod (c2 / country :wiki "Japan"
+                                          :name (n2 / name :op1 "Japan")))))
+                  :consist-of (g / gold))
+            :ARG3 (m / mass-quantity :quant 1.1
+                  :unit (k / kilogram))))
+
+# ::id sdl_0002.7
+# ::snt The low - cut gold swimsuit with a low back weighs 500 grams , with a sales price of 10 million Japanese yen .
+(w / weigh-01
+      :ARG1 (s / swimsuit
+            :consist-of (g / gold)
+            :prep-with (b / back
+                  :ARG1-of (l / low-04))
+            :ARG1-of (s2 / sell-01
+                  :ARG3 (m2 / monetary-quantity :quant 10000000
+                        :unit (y / yen
+                              :mod (c / country :wiki "Japan" :name (n / name :op1 "Japan")))))
+            :mod (l2 / low-cut))
+      :ARG3 (m / mass-quantity :quant 500
+            :unit (g2 / gram)))
+
+# ::id sdl_0002.8
+# ::snt A spokesperson for the company said , " The dress and swimsuit can be worn just like ordinary clothing , but must be treated the same as jewelry , and cannot be washed in a washing machine . "
+(s / say-01
+      :ARG0 (p3 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / company)
+                  :ARG2 (s2 / spokesperson)))
+      :ARG1 (c2 / contrast-01
+            :ARG1 (p / possible-01
+                  :ARG1 (w / wear-01
+                        :ARG1 (a / and
+                              :op1 (d / dress)
+                              :op2 (s3 / swimsuit)
+                              :ARG1-of (r / resemble-01
+                                    :ARG2 (c3 / clothing
+                                          :mod (o2 / ordinary))))
+                        :mod (j / just)))
+            :ARG2 (a3 / and
+                  :op1 (o / obligate-01
+                        :ARG2 (t / treat-01
+                              :ARG2 (s4 / same-01
+                                    :ARG1 a
+                                    :ARG2 (j2 / jewelry))))
+                  :op2 (p2 / possible-01 :polarity -
+                        :ARG1 (w2 / wash-01
+                              :ARG1 a
+                              :instrument (m / machine
+                                    :ARG0-of (w3 / wash-01)))))))
+
+# ::id sdl_0002.9
+# ::snt The company is also displaying a relatively inconspicuous gold wall tapestry , which can be used to decorate the living room , at a price of 50 million Japanese yen ( about 13.42 million NT dollars ) .
+(d / display-01
+      :ARG0 (c / company)
+      :ARG1 (t / tapestry
+            :purpose (w / wall)
+            :consist-of (g / gold)
+            :mod (c2 / conspicuous :polarity -
+                  :mod (r2 / relative))
+            :ARG1-of (p2 / price-01
+                  :ARG2 (m / monetary-quantity :quant 50000000
+                        :unit (y / yen
+                              :mod (c3 / country :wiki "Japan"
+                                    :name (n / name :op1 "Japan")))))
+            :ARG1-of (u2 / use-01
+                  :ARG2 (d2 / decorate-01
+                        :ARG1 (r / room
+                              :mod (l / living))
+                        :ARG2 t)
+                  :ARG1-of (p / possible-01)))
+      :mod (a / also))
+
+## SUPER STRUCTURE
+Feb 2
+Feb 9 Update
+
+# TODO (Feb 9) AMR captures the `consequence` TDT rel by `cause-01`, see sdl_0002.1
+
+(ROOT
+    :DCT dct
+    :aut aut
+    :SNT(snt1
+    Rockström said that when rich countries increase their consumption , they also accelerate the exploitation of the world 's national resources , with the result that they emit more greenhouse gases .
+        :coref()
+        :modality(
+            pos(s1s/say-01, aut)
+            pos(s1p/John_Rockström, aut)
+            pos(s1i/increase-01, s1p/John_Rockström)
+            pos(s1a/accelerate-01, s1p/John_Rockström)
+            pos(s1e2/emit-01, s1p/John_Rockström)
+
+            # TODO (Feb 9) these are POS, yet no node in TDT?
+            pos(s1c2/consume-01, aut)
+            pos(s1e/exploit-01, aut)
+        )
+        # TODO (Feb 24): proposal
+        :discourse(
+            before(s1s/say-01, dct)
+
+            # TODO (Feb 9) Update with Causal rels
+            # AMR captures this through a `time` relation between `accelerate` and `increase`. This is syntactically correct but `when` can mean `if`
+            consequence(s1a/accelerate-01, s1i/increase-01) # `accelrate` consequence of `increase`
+            # AMR captures this through `cause-01` relation
+            consequence(s1e2/emit-01, s1a/accelerate-01) # `emit` consequence of `accelerate`
+
+            # TODO (Feg 24): overlap decomposition vs replacement; not common usage in English
+
+        )
+    )
+    :SNT(snt2
+    This will ultimately accelerate the speed of desertification in sub - Saharan African countries and other areas of the world .
+        :coref()
+        :modality(
+            # assuming `Rockstrom` still speaking
+            pos(s2a/accelerate-01, aut)
+            pos(s2a/accelerate-01, s1p/John_Rockström)
+        )
+        :temporal(
+            after(s2a/accelerate-01, s1e2/emit-01)
+
+            # TODO (Feb 3): Containment?
+            overlap(s2d/desertification, s2a/accelerate-01)
+
+            # TODO (Feb 9) Update with Causla rels
+            consequence(s2d/desertification, s2a/accelerate-01)
+        )
+    )
+    :SNT(snt3
+    The ice sheet has melted earlier this season .
+        :coref()
+        :modality(
+            pos(s3m/melt-01, aut)
+        )
+        :temporal(
+            before(s3m/melt-01, dct)
+        )
+    )
+    :SNT(snt4
+    Consequently , experts have predicted that the world has at least ten years within which to lower the volume of greenhouse gas emissions before it is too late to redeem the situation .
+        :coref()
+        :modality(
+            pos(s4p/predict-01, aut)
+            pos(s4p2/experts, aut)
+            pos(s4h/have-03, s4p2/experts)
+            pos(s4l/lower-05, s4p2/experts)
+            pos(s4l2/late, s4p2/experts)
+        )
+        # TODO (Feb 3): (1) modality (2) temporal on POS events
+        :temporal(
+            before(s4p/predict-01, dct)
+            # TODO: has? state
+            overlap(s4h/have-03, dct)
+            # BEFORE captured within AMR
+        )
+    )
+    :SNT(snt5
+    A jeweler 's shop in Tokyo displayed a swimsuit , dress and shawl to go with it made of pure gold thread today . These were made by a workshop in the ancient capital , Kyoto .
+        :coref()
+        :modality(
+            pos(s5d/display-01, aut)
+            pos(s5m2/make-01, aut)
+            pos(s5m3/make-01, aut)
+        )
+        :temporal(
+            before(s5d/display-01, dct)
+            # TODO: to go with it?
+            before(s5m2/make-01, s5d/display-01)
+            # Multi-Sentence
+            before(s5m3/make-01, s5d/display-01)
+        )
+    )
+    :SNT(snt6
+    Tokyo 's Ginza Tanaka Jewelry Company said that the hand - woven gold dress weighs 1.1 kilograms , with a value of 30 million Japanese yen ( about 8.06 million NT dollars ) .
+        :coref()
+        :modality(
+            pos(s6s/say-01, aut)
+            pos(s6c/Ginza_company, aut)
+            pos(s6w/weigh-01, s6c/Ginza_company)
+        )
+        :temporal(
+            before(s6s/say-01, dct)
+            overlap(s6w/weigh-01, s6s/say-01) # ????
+        )
+    )
+    :SNT(snt7
+    The low - cut gold swimsuit with a low back weighs 500 grams , with a sales price of 10 million Japanese yen .
+        :coref()
+        :modality(
+            # assuming it is the company speaking
+            pos(s7w/weigh-01, s6c/Ginza_company)
+        )
+        :temporal(
+            overlap(s7w/weigh-01, s6s/say-01) # ???
+        )
+    )
+    :SNT(snt8
+    A spokesperson for the company said , " The dress and swimsuit can be worn just like ordinary clothing , but must be treated the same as jewelry , and cannot be washed in a washing machine . "
+        :coref(
+            same(s8c/company, s6c/Ginza_Tanaka_Jewelry_Company)
+        )
+        :modality(
+            pos(s8s/say-01, aut)
+            pos(s8p3/spokesperson, aut)
+            pos(s8w/wear-01, s8p3/spokesperson)
+            pos(s8t/trea-01, s8p3/spokesperson)
+            neutNeg(s8w2/wash-01, s8p3/spokesperson) # cannot / could not
+        )
+        :temporal(
+            before(s8s/say-01, aut)
+            # not sure if meaningful to establish temporal rels for events here
+        )
+    )
+    :SNT(snt9
+    The company is also displaying a relatively inconspicuous gold wall tapestry , which can be used to decorate the living room , at a price of 50 million Japanese yen ( about 13.42 million NT dollars ) .
+        :coref(
+            same(s9c/company, s8c/company)
+        )
+        :modality(
+            pos(s9d/display-01, aut)
+            pos(s9u2/use-01, aut)
+            ???(s9d2/decorate-01, aut)
+        )
+        :temporal(
+            overlap(s9d/display-01, dct)
+        )
+    )
+)
+
+### NEW ARTICLE
+
+# ::id sdl_0002.10
+# ::snt The London emergency services said that altogether 11 people had been sent to hospital for treatment due to minor wounds .
+(s / say-01
+      :ARG0 (s2 / service
+            :mod (e / emergency)
+            :location (c / city :wiki "London"
+                  :name (n / name :op1 "London")))
+      :ARG1 (s3 / send-01
+            :ARG1 (p / person :quant 11)
+            :ARG2 (h / hospital)
+            :mod (a / altogether)
+            :purpose (t / treat-03
+                  :ARG1 p
+                  :ARG2 (w / wound-01
+                        :ARG1 p
+                        :mod (m / minor)))))
+
+# ::id sdl_0002.11
+# ::snt After the seven hundred passengers on the train were stranded for two hours , they were guided through the tunnels to a safe place .
+(g / guide-01
+      :ARG1 (p / passenger :quant 700)
+      :ARG2 (p2 / place
+            :mod (s / safe))
+      :path (t2 / tunnel)
+      :time (a / after
+            :op1 (s2 / strand-01
+                  :ARG1 p
+                  :duration (t3 / temporal-quantity :quant 2
+                        :unit (h / hour))
+                  :location (t / train))))
+
+# ::id sdl_0002.13
+# ::snt This new strain of genetically modified potatoes has been developed by BASF Group , a giant German chemicals company .
+(d / develop-02
+      :ARG0 (c / company :wiki "BASF"
+            :name (n / name :op1 "BASF" :op2 "Group")
+            :source (c2 / country :wiki "Germany"
+                  :name (n3 / name :op1 "Germany"))
+            :mod (g / giant)
+            :mod (c3 / chemical))
+      :ARG1 (p2 / potatoe
+            :mod (s / strain
+                  :mod (n2 / new)
+                  :mod (t / this))
+            :poss-of (g2 / genetics
+                  :ARG1-of (m / modify-01))))
+
+(ROOT
+    :DCT dct
+    :aut aut
+    :SNT(snt1
+    The London emergency services said that altogether 11 people had been sent to hospital for treatment due to minor wounds .
+        :coref()
+        :modality(
+            pos(s1s/say-01, aut)
+            pos(s1s3/send-01, aut)
+            neut(s1t/treat-03, aut)
+        )
+        :discourse(
+            before(s1s/say-01, dct)
+            before(s1s3/send-01, s1s/say-01)
+
+            # TODO (Feb 9) Tricky case, redundant (with that in AMR)
+            #   merit vs using `after`
+            purpose(s1t/treat-03, s1s3/send-01)
+        )
+    )
+    :SNT(snt2
+    After the seven hundred passengers on the train were stranded for two hours , they were guided through the tunnels to a safe place .
+        :coref()
+        :modality(
+            pos(s2s2/strand-01, aut)
+            pos(s2g/guide-01, aut)
+        )
+        :temporal(
+            before(s2g/guide-01, dct)
+            # AFTER already captured in AMR
+            # after(s2g/guide-01, s2s2/strand-01)
+            # before(s2s2/strand-01, s2g/guide-01)
+        )
+    )
+    :SNT(snt3
+    Last week there were three failed car bomb attacks in London and Glasgow , and Britain only yesterday lowered its terrorist alert level from " critical " to " serious . "
+        :coref()
+        :modality(
+            # TODO (Feb 9, 24) `failed` event? as part of Aspectual annotation;
+            # pos(s3f/fail-01, aut)
+
+            neg(s3a2/attack-01, aut)
+            pos(s3l/lower-05, aut)
+        )
+        :temporal(
+            # TODO (Feb 24)
+            # before(s3f/fail-01, dct)
+            before(s3l/lower-05, dct) # can't tell when `fail` happened last week, which could include yesterday
+        )
+    )
+)
+
+### NEW ARTICLE
+
+# ::id sdl_0002.13
+# ::snt This new strain of genetically modified potatoes has been developed by BASF Group , a giant German chemicals company .
+(d / develop-02
+      :ARG0 (c / company :wiki "BASF"
+            :name (n / name :op1 "BASF" :op2 "Group")
+            :source (c2 / country :wiki "Germany"
+                  :name (n3 / name :op1 "Germany"))
+            :mod (g / giant)
+            :mod (c3 / chemical))
+      :ARG1 (p2 / potatoe
+            :mod (s / strain
+                  :mod (n2 / new)
+                  :mod (t / this))
+            :poss-of (g2 / genetics
+                  :ARG1-of (m / modify-01))))
+
+(ROOT
+    :DCT dct
+    :aut aut
+    :SNT(snt1
+    This new strain of genetically modified potatoes has been developed by BASF Group , a giant German chemicals company .
+        :coref()
+        :modality(
+            pos(s1m/modify-01, aut)
+            pos(s1d/develop-02, aut)
+        )
+        :temporal(
+            # ???
+            before(
+        )
+    )
+)
+

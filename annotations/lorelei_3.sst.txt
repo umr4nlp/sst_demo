@@ -1,0 +1,378 @@
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.1 ::date 2017-11-16T11:22:51 ::annotator SDL-AMR-09 ::preferred
+# ::snt Texas, Especially Austin, Needs Help!
+# ::save-date Mon Jan 22, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_1.txt
+(n2 / need-01
+      :ARG0 (s / state :wiki "Texas" :name (n / name :op1 "Texas")
+            :part (c / city :wiki "Austin,_Texas" :name (n3 / name :op1 "Austin")
+                  :mod (e / especially)))
+      :ARG1 (h / help-01
+            :ARG2 s))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.2 ::date 2017-11-16T11:25:34 ::annotator SDL-AMR-09 ::preferred
+# ::snt To help the survivors of the Gulf.
+# ::save-date Mon Jan 22, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_2.txt
+(h / help-01
+      :ARG1 (p / person
+            :ARG0-of (s / survive-01)
+            :location (c / country-region :wiki "Gulf_Coast_of_the_United_States" :name (n / name :op1 "Gulf"))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.3 ::date 2017-11-16T11:26:19 ::annotator SDL-AMR-09 ::preferred
+# ::snt Mega links at site:
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_3.txt
+(l / link-01
+      :ARG2 (s / site)
+      :degree (m / mega))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.4 ::date 2017-11-16T11:29:17 ::annotator SDL-AMR-09 ::preferred
+# ::snt http://www.keshertalk.com/archives/2...g_hurrica.html
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_4.txt
+(u / url-entity :value "http://www.keshertalk.com/archives/2...g_hurrica.html")
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.5 ::date 2017-11-16T11:29:52 ::annotator SDL-AMR-09 ::preferred
+# ::snt September 03, 2005 Helping hurricane refugees in Austin TX
+# ::save-date Fri Nov 17, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_5.txt
+(h / help-01
+      :ARG1 (r / refugee
+            :mod (h2 / hurricane))
+      :location (c / city :wiki "Austin,_Texas"
+            :name (n / name :op1 "Austin")
+            :part-of (s / state :wiki "Texas"
+                  :name (n2 / name :op1 "Texas")))
+      :time (d / date-entity :day 3 :month 9 :year 2005))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.6 ::date 2017-11-16T11:31:46 ::annotator SDL-AMR-09 ::preferred
+# ::snt I used to live in Austin TX and I just got emails from both my former synagogue and a large online community there.
+# ::save-date Mon Jan 8, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_6.txt
+(a / and
+      :op1 (l / live-01
+            :ARG0 (i / i)
+            :location (c / city :wiki "Austin,_Texas" :name (n / name :op1 "Austin")
+                  :part-of (s / state :wiki "Texas" :name (n2 / name :op1 "Texas")))
+            :time (u / use-03))
+      :op2 (g / get-01
+            :ARG0 i
+            :ARG1 (e / email)
+            :ARG2 (a2 / and
+                  :op1 (s2 / synagogue
+                        :time (b / before))
+                  :op2 (c2 / community
+                        :mod (o / online)
+                        :location c
+                        :mod (l2 / large)))
+            :mod (j / just)))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.7 ::date 2017-11-16T11:39:52 ::annotator SDL-AMR-09 ::preferred
+# ::snt Houston is overloaded and many refugees are proceeding to Austin.
+# ::save-date Mon Jan 22, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_7.txt
+(a / and
+      :op1 (l / load-01
+            :ARG1 (c / city :wiki "Houston" :name (n / name :op1 "Houston"))
+            :ARG1-of (o / over-03))
+      :op2 (p / proceed-01
+            :ARG0 (r / refugee
+                  :quant (m / many))
+            :destination (c2 / city :wiki "Austin,_Texas" :name (n2 / name :op1 "Austin"))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.8 ::date 2017-11-16T11:42:38 ::annotator SDL-AMR-09 ::preferred
+# ::snt If you live in the Austin area and want to help, many resources are listed in the extended entry.
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_8.txt
+(h / have-condition-91
+      :ARG1 (l2 / list-01
+            :ARG1 (r / resource
+                  :quant (m / many))
+            :location (e / entry
+                  :ARG1-of (e2 / extend-01)))
+      :ARG2 (a / and
+            :op1 (l / live-01
+                  :ARG0 (y / you)
+                  :location (a2 / area
+                        :mod (c / city :wiki "Austin,_Texas"
+                              :name (n / name :op1 "Austin"))))
+            :op2 (w / want-01
+                  :ARG0 y
+                  :ARG1 (h2 / help-01))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.9 ::date 2017-11-16T11:47:53 ::annotator SDL-AMR-09 ::preferred
+# ::snt (New from Jews in the affected areas (and some theodicy to contradict free-floating theological idiocy).
+# ::save-date Fri Dec 22, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_9.txt
+(a3 / and
+      :op1 (n / new-02
+            :source (p / person
+                  :mod (r / religious-group :wiki "Jews" :name (n2 / name :op1 "Jew"))
+                  :location (a / area
+                        :ARG1-of (a2 / affect-01))))
+      :op2 (c / contradict-01
+            :ARG0 (t / theodicy
+                  :quant (s / some))
+            :ARG1 (i2 / idiocy
+                  :mod (t2 / theology)
+                  :topic (f / float-01
+                        :ARG1-of (f2 / free-01)))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.10 ::date 2017-11-16T12:04:09 ::annotator SDL-AMR-09 ::preferred
+# ::snt Jewish organizations collecting relief funds.)
+# ::save-date Fri Nov 17, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_10.txt
+(c / collect-01
+      :ARG0 (o / organization
+            :mod (r / religious-group :wiki "Jews"
+                  :name (n / name :op1 "Jew")))
+      :ARG1 (f / fund-01
+            :ARG1 (r2 / relieve-01)))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.11 ::date 2017-11-16T12:05:41 ::annotator SDL-AMR-09 ::preferred
+# ::snt Churches in South Texas which are taking in refugees.
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_11.txt
+(t / take-in-06
+      :ARG0 (c / church
+            :location (l / local-region :wiki "South_Texas"
+                  :name (n2 / name :op1 "South" :op2 "Texas")))
+      :ARG1 (r / refugee))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.12 ::date 2017-11-16T12:07:42 ::annotator SDL-AMR-09 ::preferred
+# ::snt If you need news of loved ones, list of people who have been evacuated and where.
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_12.txt
+(h / have-condition-91
+      :ARG1 (l2 / list-01
+            :ARG1 (a / and
+                  :op1 (p2 / person
+                        :ARG1-of (e / evacuate-01))
+                  :op2 (t / thing
+                        :location-of e)))
+      :ARG2 (n / need-01
+            :ARG0 (y / you)
+            :ARG1 (n2 / news
+                  :topic (p / person
+                        :ARG1-of (l / love-01
+                              :ARG0 y)))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.13 ::date 2017-11-16T12:17:14 ::annotator SDL-AMR-09 ::preferred
+# ::snt The University of TX at Austin, Rice U, and Texas A&M are coordinating with Tulane to enroll college students displaced by the floods.
+# ::save-date Wed Jan 17, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_13.txt
+(c / coordinate-01
+      :ARG0 (a / and
+            :op1 (u4 / university :wiki "Rice_University" :name (n4 / name :op1 "Rice" :op2 "U")
+                  :mod (u / university
+                        :mod (s / state :wiki "Texas" :name (n / name :op1 "Texas")))
+                  :location (c3 / city :wiki "Austin,_Texas" :name (n5 / name :op1 "Austin")))
+            :op2 (u2 / university :wiki "Texas_A&M_University" :name (n2 / name :op1 "Texas" :op2 "A" :op3 "&" :op4 "M")))
+      :ARG2 (u3 / university :wiki "Tulane_University" :name (n3 / name :op1 "Tulane"))
+      :purpose (e / enroll-01
+            :ARG1 (p / person
+                  :ARG0-of (s2 / study-01)
+                  :mod (c2 / college)
+                  :ARG1-of (d / displace-01
+                        :ARG0 (f4 / flood-01)))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.14 ::date 2017-11-16T12:23:39 ::annotator SDL-AMR-09 ::preferred
+# ::snt Also Trinity U in San Antonio.
+# ::save-date Wed Jan 17, 2018 ::file ENG_DF_000170_20050903_C00020J0V_0001_14.txt
+(u / university :wiki "Trinity_University_(Texas)" :name (n / name :op1 "Trinity" :op2 "U")
+      :location (c / city :wiki "San_Antonio" :name (n2 / name :op1 "San" :op2 "Antonio"))
+      :mod (a / also))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.15 ::date 2017-11-16T12:24:26 ::annotator SDL-AMR-09 ::preferred
+# ::snt If you wish to volunteer immediately, please contact the Austin chapter of the American Red Cross at 512-929-1229.
+# ::save-date Thu Nov 16, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_15.txt
+(h / have-condition-91
+      :ARG1 (c3 / contact-01 :mode imperative :polite +
+            :ARG0 (y / you)
+            :ARG1 (c4 / chapter
+                  :mod (c5 / city :wiki "Austin,_Texas"
+                        :name (n4 / name :op1 "Austin"))
+                  :part-of (o2 / organization :wiki "International_Red_Cross_and_Red_Crescent_Movement"
+                        :name (n3 / name :op1 "Red" :op2 "Cross")
+                        :mod (c / country :wiki "United_States"
+                              :name (n / name :op1 "America"))))
+            :manner (p / phone-number-entity :value "512-929-1229"))
+      :ARG2 (w / wish-01
+            :ARG0 y
+            :ARG1 (v / volunteer-01
+                  :time (i2 / immediate))))
+
+# ::id ENG_DF_000170_20050903_C00020J0V_0001.16 ::date 2017-11-16T12:36:09 ::annotator SDL-AMR-09 ::preferred
+# ::snt It may be necessary to leave a message and may take up to 1 day to have your call returned.
+# ::save-date Fri Nov 17, 2017 ::file ENG_DF_000170_20050903_C00020J0V_0001_16.txt
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (n / need-01
+                  :ARG1 (l / leave-02
+                        :ARG1 (m / message-01))))
+      :op2 (p2 / possible-01
+            :ARG1 (t2 / take-10
+                  :ARG1 (u / up-to
+                        :op1 (t / temporal-quantity :quant 1
+                              :unit (d3 / day)))
+                  :ARG2 (r / return-02
+                        :ARG1 (c / call-02
+                              :ARG0 (y / you))))))
+
+1. Sometimes, difficult to know whether `I` refers to a interviewee, or the author of the article (or, possibly a blog)
+2. TAMP annotation for directives
+3. `take(last,spend)..a..done..` construction
+
+March 1, 2020
+(ROOT
+    :DCT dct
+    :AUT aut
+    :SNT(snt1
+    Texas, Especially Austin, Needs Help!
+        :coref()
+        :modality(
+            pos(s1n2/need-01, aut)
+        )
+        :discourse(
+            overlap(s1n2/nee-1, dct)
+        )
+    )
+    :SNT(snt2
+    To help the survivors of the Gulf.
+        :coref()
+        :modality(
+            neut(s2h/help-01, aut)
+            # survivor -> survive event?
+            pos(s2s/survive-01, aut)
+        )
+        :discourse(
+            before(s2s/survive-01, s2h/help-01)
+        )
+    )
+    :SNT(snt3
+    Mega links at site:
+        :coref()
+        :modality()
+        :discourse()
+    )
+    :SNT(snt4
+    http://www.keshertalk.com/archives/2...g_hurrica.html
+        :coref()
+        :modality()
+        :discourse()
+    )
+    :SNT(snt5
+    September 03, 2005 Helping hurricane refugees in Austin TX
+        :coref() # how to annotate a sentence fragment?
+        :modality()
+        :discourse()
+    )
+    :SNT(snt6
+    I used to live in Austin TX and I just got emails from both my former synagogue and a large online community there.
+        :coref(
+            same(s6i/I, aut)
+        )
+        :modality(
+            # 1. incorrect, assuming `I` is the interviewee
+            # pos(s6i/I, aut)
+            # pos(s6l/live-01, s6i/I)
+
+            # 2. correct, assuming `I` is the author
+            pos(s6l/live-01, aut)
+            pos(s6g/get-01, s6i/I)
+        )
+        :discourse(
+            before(s6l/live-01, dct)
+            after(s6g/get-01, s6l/live-01)
+        )
+    )
+    :SNT(snt7
+    Houston is overloaded and many refugees are proceeding to Austin.
+        :coref()
+        :modality(
+            # curious annotation of `overloaded`
+            pos(s7l/load-01, s6i/I)
+            pos(s7p/proceed-01, s6i/I)
+        )
+        :discourse(
+            overlap(s7l/load-01, dct)
+            overlap(s7p/proceed-01, s6i/I)
+        )
+    )
+    :SNT(snt8
+    (New from Jews in the affected areas (and some theodicy to contradict free-floating theological idiocy).
+        # AMR makes no distinction on parenthetical clause/sentence fragment.
+        :coref()
+        :modality(
+            pos(s8a/affect, aut)
+            pos(s8c/contradict, aut) # FULL GENERIC
+        )
+        # `affected` happened from the author's perspective, but not sure if it warrants a temporal annotation as an event
+        :discourse(
+            before(s8a/affect, dct)
+            overlap(s8c/contradict, dct)
+        )
+    )
+    :SNT(snt9
+    Jewish organizations collecting relief funds.)
+        :coref()
+        :modality(
+            pos(s9c/collect, aut)
+        )
+        :discourse(
+            overlap(s9c/collect, dct)
+        )
+    )
+    :SNT(snt10
+    Churches in South Texas which are taking in refugees.
+        :coref()
+        :modality(
+            pos(s10t/take-in-06, s6i/I)
+        )
+        :discourse(
+            overlap(s10t/take-in-06, dct)
+        )
+    )
+    :SNT(snt11
+    If you need news of loved ones, list of people who have been evacuated and where.
+        # strange AMR
+        :coref()
+        :modality(
+            neut(s11n/need-01, s6i/I)
+            pos(s11e/evacuate-01, s6i/I)
+        )
+        :discourse(
+            past(s11e/evacuate-01, dct)
+        )
+    )
+    :SNT(snt12
+    The University of TX at Austin, Rice U, and Texas A&M are coordinating with Tulane to enroll college students displaced by the floods.
+        :coref()
+        :modality(
+            # the only cue that tells me that this is the Author and not the s6i is the way sentence is worded as a statement, rather than a colloquial sentence.
+            pos(s12c/coordinate-01, aut)
+            neut(s12e/enroll-01, aut)
+            pos(s12d/displace-01, aut)
+        )
+        :discourse(
+            overlap(s12c/coordinate-01, dct)
+            purpose(s12e/enroll-01, s12c/coordinate-01) # annotated in AMR too
+            before(s12d/displace-01, dct)
+        )
+    )
+    :SNT(snt13
+    Also Trinity U in San Antonio.
+        :coref()
+        :modality()
+        :discourse()
+    )
+    :SNT(snt14
+    If you wish to volunteer immediately, please contact the Austin chapter of the American Red Cross at 512-929-1229.
+        :coref()
+        :modality(
+            # according to TAMP v2, `wish` falls under `NEG`
+            neut(s14v/volunteer-01, s6i/I) # at this point, s6i may just be the author
+            # how to annotate commands?
+            neut(s14c3/contact-01, s6i/I)
+        )
+        :discourse()
+    )
+    :SNT(snt15
+    It may be necessary to leave a message and may take up to 1 day to have your call returned.
+        :coref()
+        :modality(
+            neut(s15l/leave-02, s6i/I)
+            # TODO (March 2) 'take ... to have .. returned'
+            #   take not event?
+            neut(s15r
+        )
+        :discourse()
+    )
+)
